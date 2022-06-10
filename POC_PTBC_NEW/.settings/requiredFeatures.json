@@ -96,6 +96,12 @@
   }, {
     "id" : "org.talend.lite.di.wsdl.feature.feature.group"
   }, {
+    "id" : "org.talend.lite.dq.components.spark.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.dq.components.sparkstr.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.dq.feature.feature.group"
+  }, {
     "id" : "org.talend.lite.esb.apidesigner.feature.feature.group"
   }, {
     "id" : "org.talend.lite.metadata.bridge.feature.feature.group"
