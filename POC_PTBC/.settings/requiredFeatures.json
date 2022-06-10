@@ -4,6 +4,8 @@
   "requiredInstallableUnits" : [ {
     "id" : "org.talend.lite.di.metadata.mdm.feature.feature.group"
   }, {
+    "id" : "org.talend.lite.di.validationrules.feature.feature.group"
+  }, {
     "id" : "org.talend.studio.components.tcompv0.dataprep.feature.feature.group"
   }, {
     "id" : "org.talend.studio.components.tcompv0.datastewardship.feature.feature.group"
