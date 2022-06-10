@@ -23,7 +23,21 @@
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_yrocKuiyEeysLJGdMxs_fw"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_yrocK-iyEeysLJGdMxs_fw">
       <builtInMatchRuleDefinition xmi:id="_yrocLOiyEeysLJGdMxs_fw">
-        <matchRules xmi:id="_ywbckOiyEeysLJGdMxs_fw" name="Match Rule 1"/>
+        <blockKeys xmi:id="_7Ii-EOiyEeysLJGdMxs_fw" name="test1" column="CIF">
+          <preAlgorithm xmi:id="_7Ii-EeiyEeysLJGdMxs_fw" algorithmType="upperCase" algorithmParameters=""/>
+          <algorithm xmi:id="_7Ii-EuiyEeysLJGdMxs_fw" algorithmType="first_Char_EW" algorithmParameters=""/>
+          <postAlgorithm xmi:id="_7Ii-E-iyEeysLJGdMxs_fw" algorithmType="NON_ALGO" algorithmParameters=""/>
+        </blockKeys>
+        <blockKeys xmi:id="__oxA8OiyEeysLJGdMxs_fw" name="test2" column="CIF_NAME">
+          <preAlgorithm xmi:id="__oxA8eiyEeysLJGdMxs_fw" algorithmType="upperCase" algorithmParameters=""/>
+          <algorithm xmi:id="__oxA8uiyEeysLJGdMxs_fw" algorithmType="first_Char_EW" algorithmParameters=""/>
+          <postAlgorithm xmi:id="__oxA8-iyEeysLJGdMxs_fw" algorithmType="NON_ALGO" algorithmParameters=""/>
+        </blockKeys>
+        <matchRules xmi:id="_ywbckOiyEeysLJGdMxs_fw" name="Match Rule 1">
+          <matchKeys xmi:id="_3-5skOiyEeysLJGdMxs_fw" name="CIF" column="CIF" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_3-6ToOiyEeysLJGdMxs_fw" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
       </builtInMatchRuleDefinition>
     </indicators>
   </results>
