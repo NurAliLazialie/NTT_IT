@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_yrocIOiyEeysLJGdMxs_fw" name="test_match_analysis" creationDate="2022-06-10T18:45:13.681+0700">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_yrocIOiyEeysLJGdMxs_fw" name="test_match_analysis" creationDate="2022-06-10T18:45:13.681+0700" defaultContext="Default">
+  <clientDependency href="../../metadata/connections/SqlServer_0.1.item#_2JHFEOixEeysLJGdMxs_fw"/>
   <taggedValue xmi:id="_yrocIeiyEeysLJGdMxs_fw" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_yrocIuiyEeysLJGdMxs_fw" tag="Status" value="development"/>
   <taggedValue xmi:id="_yrocI-iyEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
-  <taggedValue xmi:id="_yrocJOiyEeysLJGdMxs_fw" tag="Purpose"/>
-  <taggedValue xmi:id="_yrocJeiyEeysLJGdMxs_fw" tag="Description"/>
+  <taggedValue xmi:id="_yrocJOiyEeysLJGdMxs_fw" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_yrocJeiyEeysLJGdMxs_fw" tag="Description" value=""/>
   <taggedValue xmi:id="_yrocJuiyEeysLJGdMxs_fw" tag="Version" value="0.1"/>
-  <context xmi:id="_yrocJ-iyEeysLJGdMxs_fw"/>
+  <taggedValue xmi:id="_yzA2gOiyEeysLJGdMxs_fw" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_yzA2geiyEeysLJGdMxs_fw" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_yzA2guiyEeysLJGdMxs_fw" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_y1Dd4eiyEeysLJGdMxs_fw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_yrocJ-iyEeysLJGdMxs_fw">
+    <connection href="../../metadata/connections/SqlServer_0.1.item#_sHE_cOixEeysLJGdMxs_fw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljl-ixEeysLJGdMxs_fw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
+  </context>
   <results xmi:id="_yrocKOiyEeysLJGdMxs_fw">
     <resultMetadata xmi:id="_yrocKeiyEeysLJGdMxs_fw"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_yrocKuiyEeysLJGdMxs_fw"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_yrocK-iyEeysLJGdMxs_fw">
-      <builtInMatchRuleDefinition xmi:id="_yrocLOiyEeysLJGdMxs_fw"/>
+      <builtInMatchRuleDefinition xmi:id="_yrocLOiyEeysLJGdMxs_fw">
+        <matchRules xmi:id="_ywbckOiyEeysLJGdMxs_fw" name="Match Rule 1"/>
+      </builtInMatchRuleDefinition>
     </indicators>
   </results>
   <parameters xmi:id="_yrocLeiyEeysLJGdMxs_fw" analysisType="Match Analysis"/>
+  <contextType xmi:id="_y1Dd4OiyEeysLJGdMxs_fw" confirmationNeeded="false" name="Default"/>
 </dataquality.analysis:Analysis>
