@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>TDQ_Data Profiling/Analyses/PTBC_POC</deletedFolders>
   <deletedItems id="_ykTFEOiyEeysLJGdMxs_fw" path="" type="TDQ_ANALYSIS_ELEMENT"/>
 </recyclebin:RecycleBin>
