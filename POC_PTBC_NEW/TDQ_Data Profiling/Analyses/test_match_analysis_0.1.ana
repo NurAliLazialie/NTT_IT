@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_yrocIOiyEeysLJGdMxs_fw" name="test_match_analysis" creationDate="2022-06-10T18:45:13.681+0700">
+  <taggedValue xmi:id="_yrocIeiyEeysLJGdMxs_fw" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_yrocIuiyEeysLJGdMxs_fw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_yrocI-iyEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
+  <taggedValue xmi:id="_yrocJOiyEeysLJGdMxs_fw" tag="Purpose"/>
+  <taggedValue xmi:id="_yrocJeiyEeysLJGdMxs_fw" tag="Description"/>
+  <taggedValue xmi:id="_yrocJuiyEeysLJGdMxs_fw" tag="Version" value="0.1"/>
+  <context xmi:id="_yrocJ-iyEeysLJGdMxs_fw"/>
+  <results xmi:id="_yrocKOiyEeysLJGdMxs_fw">
+    <resultMetadata xmi:id="_yrocKeiyEeysLJGdMxs_fw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_yrocKuiyEeysLJGdMxs_fw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_yrocK-iyEeysLJGdMxs_fw">
+      <builtInMatchRuleDefinition xmi:id="_yrocLOiyEeysLJGdMxs_fw"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_yrocLeiyEeysLJGdMxs_fw" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
