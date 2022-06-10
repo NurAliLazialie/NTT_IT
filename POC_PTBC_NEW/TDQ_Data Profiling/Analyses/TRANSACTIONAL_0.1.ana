@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_NGK2sOiyEeysLJGdMxs_fw" name="TRANSACTIONAL" creationDate="2022-06-10T18:41:01.486+0700">
+  <taggedValue xmi:id="_NGK2seiyEeysLJGdMxs_fw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_NGK2suiyEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
+  <taggedValue xmi:id="_NGK2s-iyEeysLJGdMxs_fw" tag="Purpose"/>
+  <taggedValue xmi:id="_NGK2tOiyEeysLJGdMxs_fw" tag="Description"/>
+  <taggedValue xmi:id="_NGK2teiyEeysLJGdMxs_fw" tag="Version" value="0.1"/>
+  <context xmi:id="_NGK2tuiyEeysLJGdMxs_fw"/>
+  <results xmi:id="_NGK2t-iyEeysLJGdMxs_fw">
+    <resultMetadata xmi:id="_NGK2uOiyEeysLJGdMxs_fw"/>
+  </results>
+  <parameters xmi:id="_NGK2ueiyEeysLJGdMxs_fw" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
