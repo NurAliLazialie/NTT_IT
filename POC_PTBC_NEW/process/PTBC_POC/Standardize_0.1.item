@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:MAXugKH09sVqdKLC5PeGLVUenJRWCPQh7pEEvOOa"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:3xi3MaBOhhEKmuDG/OHkeaRlfC7pLRfTkPEJE+Bu"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Iss5+kyx0B6mXWqp7tbCQLe2wjZCX4uYkPwkXFaq"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HP5Lry8e6LHnM4Di0pb1G7jJUOg4vxYtM2DJiZjF"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -124,7 +124,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PTBC_POC&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yggj8Z45xUc3yxvs+JtUMnfLLPCpWcvTlCLg1SENJ/nzPo7Hut8="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ILnOPh8fFtbtTPV+8lYMGMqGDRSyURSaIbCYbUXiDpJcUcoO7YE="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -149,7 +149,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:x0kJ4KNYMJE8/um7SbMsRIn21+67y1rPNagZMJgO"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GbPFPLfc0Ecmk6YZpsq3/cDiSoEBfP+/jGHcxx+X"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DIM_PARTY&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -185,23 +185,6 @@
       <column comment="" key="false" length="10" name="BIRTH_DT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Mail_Address" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Gender" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tGenKey" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGenKey_1"/>
-    <elementParameter field="MATCH_RULE_IMEX_CONTROLLER" name="MATCH_RULE_IMEX" value="false"/>
-    <elementParameter field="TABLE" name="ALGO"/>
-    <elementParameter field="CHECK" name="SHOW_HELP_KEY" value="false"/>
-    <elementParameter field="LABEL" name="HELP_KEY" show="false" value="algorithm:&#10;(1) First character of each word: for example, &quot;hello world&quot; returns &quot;hw&quot; on impact&#10;(2) N first characters of each word: fill in a digit number, like 2 or 12, etc.&#10;(3) First N characters of the string: fill in a digit number&#10;(4) Last N characters of the string: fill in a digit number&#10;(5) First N consonants of the string: fill in a digit number&#10;(6) First N vowels of the string: fill in a digit number&#10;(7) Pick characters: fill a String like &quot;1;2-4;5&quot;, for example, &quot;abcdef&quot; returns &quot;bcdf&quot; on impact&#10;(8) Substring(a,b): fill a String like &quot;2;4&quot;, for example, &quot;abcdef&quot; returns &quot;cd&quot; on impact&#10;(9) Soundex code: generates a code according to a standard English phonetic algorithm&#10;(10) Metaphone code: generates a code according to the character pronunciation&#10;(11) Double-Metaphone code: generates a code according to the character pronunciation using a new version of the Metaphone phonetic algorithm, &#10;     that produces more accurate results than the original algorithm&#10;(12) Exact: includes in the functional key the full string&#10;(13) Fingerprint key: refer to https://help.talend.com&#10;(14) nGramKey: refer to https://help.talend.com&#10;(15) Cologne phonetics: a soundex phonetic algorithm optimized for the German language. It encodes a string into a Cologne phonetic value.&#10;pre/post-algorithm:&#10;(1) Remove diacritical marks: removes any diacritical mark&#10;(2) Use default value: any String you want.(it is to replace empty value after key algorithm)&#10;(3) Add left position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#10;(4) Add right position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#10;"/>
-    <elementParameter field="CHECK" name="IS_SHADOW_JOB" show="false" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tGenKey_1">
-      <column comment="" key="false" length="8" name="CIF" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="CIF_NAME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="BIRTH_DT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Mail_Address" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Gender" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="T_GEN_KEY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
@@ -244,20 +227,19 @@
         <mapperTableEntries expression="row1.Gender " name="Gender" nullable="true" type="id_String"/>
       </outputTables>
       <outputTables name="out2" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row3.CIF == null || row3.CIF.equals(&quot;&quot;)? &quot;Invalid_CIF&quot;:row3.CIF " name="CIF" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.CIF_NAME " name="CIF_NAME" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.BIRTH_DT " name="BIRTH_DT" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Mail_Address " name="Mail_Address" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Gender " name="Gender" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.T_GEN_KEY " name="T_GEN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CIF == null || row1.CIF.equals(&quot;&quot;)? &quot;Invalid_CIF&quot;:row1.CIF " name="CIF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CIF_NAME " name="CIF_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.BIRTH_DT " name="BIRTH_DT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Mail_Address " name="Mail_Address" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Gender " name="Gender" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="numeric.sequence(&quot;var1&quot;,1,1) " name="T_GEN_KEY" nullable="true" type="id_String"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="CIF" nullable="true" type="id_String"/>
         <mapperTableEntries name="CIF_NAME" nullable="true" type="id_String"/>
         <mapperTableEntries name="BIRTH_DT" nullable="true" type="id_String"/>
         <mapperTableEntries name="Mail_Address" nullable="true" type="id_String"/>
         <mapperTableEntries name="Gender" nullable="true" type="id_String"/>
-        <mapperTableEntries name="T_GEN_KEY" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -373,13 +355,9 @@
       <column comment="" key="false" length="255" name="Mail_Address" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tGenKey_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tGenKey_1" offsetLabelX="0" offsetLabelY="0" source="tGenKey_1" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFilterRow_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -409,13 +387,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_20ef3a81-fea3-4b3a-8d46-761dc3359954"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5LZELaVh9AeYJFK6BPXpAaiBO2sZ56QecisS2Pv8Djpnx9TV7WL4Rk3jZTysZ7pmaE3r73MuT4YJ&#13;
-V/mnzJBOjg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0882e3f7-b8a8-4d85-8f7d-e0552746f689"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dx34lTvlzVxViGdNBnx8I3LMqdGsfVfK49Zh6cIUwDXPG/OAYqdaiFfgXlWDy/2qNyBXkIy+N5wP&#13;
-e1Gxmavj1Q==</DigestValue></Reference></SignedInfo><SignatureValue>kwNbIN5KN0Cpus82yKoQIvWsDzhfO+VT5hszc6qdNMNbnNSodKVEqGYEfMWep7MukqyrxVJkWhah&#13;
-rR3gQkZEpkzZm5ViEIN12kJ4dA+D6TKg3AwEHTDQbiXkSv+EZnx6uv6kY5WJCsGtxPZrfelZeiZY&#13;
-gmWT2a6CZsVwOZMYj0cXFG0chdgfbgL1CNivkgAkSY9x3yl5rMYhRNhwOXiaHcOTL1u24OkaHvV1&#13;
-Ent0Tu/3bX4S8l8exM4xRWnc67T/jABXm5QxW0qBvMZkrIbJf/oc0trYKdcBo/HQ45iz2yNYrj8Y&#13;
-kxEE/XSmGRVe+1OCU1RjEfJkieqsQofH/LAC9w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_10e1ffa7-5251-4d1a-9a71-5f91aaf47269"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nkjvNch5jduFo5cg5XzlMGbv8uUtvMntMIWe76sYR0DcCPzG9eVwyt9ObvYJ/zgF2ZESe92xfGYc&#13;
+jOVZt/lcGQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_421e46e7-4939-4183-9d94-dccfbc598948"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qvMeGGNiMtF7prHlLeVLSBqBx5oML9Ulm8oQFpjm2RUX2qATt5YCFwjEY9a2clDAybJwTT9vlrJk&#13;
+Lw0GKBGAiA==</DigestValue></Reference></SignedInfo><SignatureValue>U4G+7dLwLCxBGxXyTI00ihDdQlT5Oi+M30gJWL2r3pD05rcGC0h4wy3Q4PseXwKjFqh9gseshK+B&#13;
+ESNBY2pdo1HZJxEliGv7XLFDRKA9OMwUE7RxMszXA8lf6O90ydKWIGSM17o7Sqw0QUTSd6o1yUJd&#13;
+GKRdEq6oR3yaHoVi6sZ0e3RxZBKYK+r4vxAAU6rRG3sgFuEU12diBmam92VgnULxKLfg7fcsqcNn&#13;
+6Wr8jj4uomdbvctN/IE6B1VrKT8hXrLYSBqjm/j8Y1N5J7d3wO2OoCn2yc0+bcvVtbxaEfamayL/&#13;
+ICApBCN/xzgkHMiCWYHk+1o382C7c2z+qkuj2Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -437,4 +415,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0882e3f7-b8a8-4d85-8f7d-e0552746f689" Target="#_20ef3a81-fea3-4b3a-8d46-761dc3359954"><Timestamp>2022-06-13 10:47:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_421e46e7-4939-4183-9d94-dccfbc598948" Target="#_10e1ffa7-5251-4d1a-9a71-5f91aaf47269"><Timestamp>2022-06-13 10:52:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
