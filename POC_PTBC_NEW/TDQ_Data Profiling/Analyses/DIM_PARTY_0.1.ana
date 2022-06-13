@@ -19,7 +19,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:36:30.186+0700" executionDuration="411" message="" executionNumber="22" lastRunOk="true" lastExecutionNumberOk="19"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:37:12.908+0700" executionDuration="308" message="" executionNumber="23" lastRunOk="true" lastExecutionNumberOk="20"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -31,7 +31,7 @@
           <sqlGenericExpression xmi:id="_4B-rM-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JEBweixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JEBweixEeysLJGdMxs_fw" count="1001" nullCount="2" computed="true">
         <parameters xmi:id="_2JEBwuixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -42,7 +42,7 @@
           <sqlGenericExpression xmi:id="_4CBHc-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JEBw-ixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" duplicateValueCount="0">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JEBw-ixEeysLJGdMxs_fw" count="1001" nullCount="2" computed="true" duplicateValueCount="1">
         <parameters xmi:id="_2JEBxOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
@@ -59,7 +59,7 @@
           <sqlGenericExpression xmi:id="_4CEKyeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmkOrEEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" uniqueValueCount="1001">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmkOrEEeysLJGdMxs_fw" count="1001" nullCount="2" computed="true" uniqueValueCount="999">
         <parameters xmi:id="_xUFmkerEEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
@@ -76,7 +76,7 @@
           <sqlGenericExpression xmi:id="_xcjmGerEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_l6la4OrIEeysLJGdMxs_fw" nullCount="1" computed="true" length="8">
+      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_l6la4OrIEeysLJGdMxs_fw" nullCount="2" computed="true" length="8">
         <parameters xmi:id="_l6la4erIEeysLJGdMxs_fw">
           <indicatorValidDomain xmi:id="_oTM4EOrIEeysLJGdMxs_fw" name="Indicator threshold">
             <ranges xmi:id="_oTOGMOrIEeysLJGdMxs_fw" name="Value Threshold">
@@ -107,7 +107,7 @@
           <sqlGenericExpression xmi:id="_mDm0D-rIEeysLJGdMxs_fw" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="HDB"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_sIkxsOrJEeysLJGdMxs_fw" nullCount="1" computed="true" length="1">
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_sIkxsOrJEeysLJGdMxs_fw" nullCount="2" computed="true" length="6">
         <parameters xmi:id="_sIkxserJEeysLJGdMxs_fw">
           <textParameter xmi:id="_sIkxsurJEeysLJGdMxs_fw" useBlank="false"/>
         </parameters>
@@ -132,7 +132,7 @@
           <sqlGenericExpression xmi:id="_sQ187-rJEeysLJGdMxs_fw" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="HDB"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_sIkxs-rJEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true">
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_sIkxs-rJEeysLJGdMxs_fw" count="1001" nullCount="2" computed="true">
         <parameters xmi:id="_sIkxtOrJEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
@@ -147,7 +147,7 @@
           <sqlGenericExpression xmi:id="_sQ7cd-rJEeysLJGdMxs_fw" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_sIkxterJEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" distinctValueCount="6" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000674000839393939393939417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000005D707371007E000300000000000000017400014171007E0006740007393939393939417371007E0003000000000000000974000839393939393939397371007E0003000000000000038074000639393939394171007E000678">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_sIkxterJEeysLJGdMxs_fw" count="1001" nullCount="2" computed="true" distinctValueCount="5" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000574000839393939393939417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000005D707371007E00030000000000000002740007393939393939417371007E0003000000000000000974000839393939393939397371007E000300000000000003807400063939393939417371007E0003000000000000000178">
         <parameters xmi:id="_sIkxturJEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
