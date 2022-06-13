@@ -19,7 +19,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:31:23.039+0700" executionDuration="372" message="" executionNumber="18" lastRunOk="true" lastExecutionNumberOk="15" outThreshold="true"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:31:48.756+0700" executionDuration="389" message="" executionNumber="19" lastRunOk="true" lastExecutionNumberOk="16"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -76,43 +76,12 @@
           <sqlGenericExpression xmi:id="_xcjmGerEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_K46H0OrJEeysLJGdMxs_fw" nullCount="1" computed="true" length="5">
-        <parameters xmi:id="_K46H0erJEeysLJGdMxs_fw">
-          <indicatorValidDomain xmi:id="_P8IKEOrJEeysLJGdMxs_fw" name="Indicator threshold">
-            <ranges xmi:id="_P8IKEerJEeysLJGdMxs_fw" name="Value Threshold">
-              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_Svis4OrJEeysLJGdMxs_fw" value="8"/>
-              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_Svis4erJEeysLJGdMxs_fw" value=""/>
-            </ranges>
-          </indicatorValidDomain>
-          <textParameter xmi:id="_K46H0urJEeysLJGdMxs_fw" useBlank="false"/>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_LBjtgOrJEeysLJGdMxs_fw" body="SELECT MIN(LEN(&quot;CIF&quot;)) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE (&quot;CIF&quot; IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &quot;CIF&quot; IS NULL  THEN 'NULL TALEND' ELSE &quot;CIF&quot; END)) &lt;> '' ) " language="Microsoft SQL Server"/>
-        <builtInIndicatorDefinition xmi:id="_LBeN8OrJEeysLJGdMxs_fw" name="Minimal Length" label="Minimal Length">
-          <taggedValue xmi:id="_LBeN8erJEeysLJGdMxs_fw" tag="Description" value="computes the minimal length of a text field. Does not take into account the null and blank values when computing the minimal length."/>
-          <taggedValue xmi:id="_LBeN8urJEeysLJGdMxs_fw" tag="Purpose" value="evaluates the length of the smallest textual record of non-null and non-blank values"/>
-          <sqlGenericExpression xmi:id="_LBeN8-rJEeysLJGdMxs_fw" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
-          <sqlGenericExpression xmi:id="_LBeN9OrJEeysLJGdMxs_fw" body="SELECT MIN( LENGTH(&lt;%=__COLUMN_NAMES__%>) ) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(NVL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) IS NOT NULL) &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
-          <sqlGenericExpression xmi:id="_LBeN9erJEeysLJGdMxs_fw" body="SELECT MIN(LEN(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END)) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
-          <sqlGenericExpression xmi:id="_LBeN9urJEeysLJGdMxs_fw" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
-          <sqlGenericExpression xmi:id="_LBeN9-rJEeysLJGdMxs_fw" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQLite"/>
-          <sqlGenericExpression xmi:id="_LBeN-OrJEeysLJGdMxs_fw" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Hive"/>
-          <sqlGenericExpression xmi:id="_LBeN-erJEeysLJGdMxs_fw" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Teradata"/>
-          <sqlGenericExpression xmi:id="_LBeN-urJEeysLJGdMxs_fw" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( LTRIM(RTRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END ))  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
-          <sqlGenericExpression xmi:id="_LBeN--rJEeysLJGdMxs_fw" body="SELECT MIN(CHAR_LENGTH( &lt;%=__COLUMN_NAMES__%> )) FROM  &lt;%=__TABLE_NAME__%>   WHERE ( &lt;%=__COLUMN_NAMES__%>  IS NOT NULL ) AND ( TRIM( CASE WHEN  &lt;%=__COLUMN_NAMES__%>  IS NULL  THEN 'NULL TALEND' ELSE  &lt;%=__COLUMN_NAMES__%>  END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Informix"/>
-          <sqlGenericExpression xmi:id="_LBeN_OrJEeysLJGdMxs_fw" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (1=1) AND (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
-          <sqlGenericExpression xmi:id="_LBeN_erJEeysLJGdMxs_fw" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
-          <sqlGenericExpression xmi:id="_LBeN_urJEeysLJGdMxs_fw" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Snowflake"/>
-          <sqlGenericExpression xmi:id="_LBeN_-rJEeysLJGdMxs_fw" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="HDB"/>
-        </builtInIndicatorDefinition>
-      </indicators>
       <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_l6la4OrIEeysLJGdMxs_fw" nullCount="1" computed="true" length="8">
         <parameters xmi:id="_l6la4erIEeysLJGdMxs_fw">
           <indicatorValidDomain xmi:id="_oTM4EOrIEeysLJGdMxs_fw" name="Indicator threshold">
             <ranges xmi:id="_oTOGMOrIEeysLJGdMxs_fw" name="Value Threshold">
-              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_OwBjUOrJEeysLJGdMxs_fw" value=""/>
-              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_OwBjUerJEeysLJGdMxs_fw" value="8"/>
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_WmZpsOrJEeysLJGdMxs_fw" value="8"/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_WmaQwOrJEeysLJGdMxs_fw" value="8"/>
             </ranges>
           </indicatorValidDomain>
           <textParameter xmi:id="_l6la4urIEeysLJGdMxs_fw" useBlank="false"/>
