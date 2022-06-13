@@ -24,7 +24,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SQLServer__0.1.item#_kpfXLOiyEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_NGK2t-iyEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_NGK2uOiyEeysLJGdMxs_fw" executionDate="2022-06-13T10:52:51.746+0700" executionDuration="448" message="" executionNumber="6" lastRunOk="true" lastExecutionNumberOk="4"/>
+      <resultMetadata xmi:id="_NGK2uOiyEeysLJGdMxs_fw" executionDate="2022-06-13T10:53:46.739+0700" executionDuration="585" message="" executionNumber="7" lastRunOk="true" lastExecutionNumberOk="5"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_q3l4EeiyEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_q3l4EuiyEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SQLServer__0.1.item#_kpfXEOiyEeysLJGdMxs_fw"/>
@@ -584,7 +584,7 @@
           <sqlGenericExpression xmi:id="_rC5wOeiyEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators.sql:UserDefIndicator" xmi:id="_S8AUMOrMEeysLJGdMxs_fw" name="Number" count="1001" nullCount="1" computed="true" matchingValueCount="0" notMatchingValueCount="1001">
+      <indicators xsi:type="dataquality.indicators.sql:UserDefIndicator" xmi:id="_S8AUMOrMEeysLJGdMxs_fw" name="Number" count="1001" nullCount="1" computed="true" matchingValueCount="3" notMatchingValueCount="998">
         <parameters xmi:id="_S8AUMerMEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SQLServer__0.1.item#_kpfXJOiyEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/User Defined Indicators/Number_0.1.definition#_OUFjUOrLEeysLJGdMxs_fw"/>
