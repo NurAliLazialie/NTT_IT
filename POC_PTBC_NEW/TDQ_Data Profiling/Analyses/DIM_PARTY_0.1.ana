@@ -19,34 +19,34 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:15:08.999+0700" executionDuration="357" message="" executionNumber="10" lastRunOk="true" lastExecutionNumberOk="7"/>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="104" computed="true">
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:15:28.404+0700" executionDuration="320" message="" executionNumber="11" lastRunOk="true" lastExecutionNumberOk="8"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9UuixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE (cif like '%C%')" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9UuixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4B-rMOixEeysLJGdMxs_fw" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_4B-rMeixEeysLJGdMxs_fw" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_4B-rMuixEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_4B-rM-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JEBweixEeysLJGdMxs_fw" count="104" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JEBweixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true">
         <parameters xmi:id="_2JEBwuixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9VOixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;CIF&quot; IS NULL  AND (cif like '%C%')" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9VOixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;CIF&quot; IS NULL " language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CBHcOixEeysLJGdMxs_fw" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_4CBHceixEeysLJGdMxs_fw" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_4CBHcuixEeysLJGdMxs_fw" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_4CBHc-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JEBw-ixEeysLJGdMxs_fw" count="104" computed="true" duplicateValueCount="0">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JEBw-ixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" duplicateValueCount="0">
         <parameters xmi:id="_2JEBxOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9VeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;CIF&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  WHERE (cif like '%C%') GROUP BY &quot;CIF&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9VeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;CIF&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  GROUP BY &quot;CIF&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CEKwOixEeysLJGdMxs_fw" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_4CEKweixEeysLJGdMxs_fw" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_4CEKwuixEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of duplicated records"/>
@@ -59,11 +59,11 @@
           <sqlGenericExpression xmi:id="_4CEKyeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmkOrEEeysLJGdMxs_fw" count="104" computed="true" uniqueValueCount="104">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmkOrEEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" uniqueValueCount="1001">
         <parameters xmi:id="_xUFmkerEEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_xcxogOrEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;CIF&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE (cif like '%C%') GROUP BY &quot;CIF&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_xcxogOrEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;CIF&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  GROUP BY &quot;CIF&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_xcjmEOrEEeysLJGdMxs_fw" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_xcjmEerEEeysLJGdMxs_fw" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_xcjmEurEEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of unique records"/>
@@ -76,33 +76,33 @@
           <sqlGenericExpression xmi:id="_xcjmGerEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JHsIeixEeysLJGdMxs_fw" count="104" computed="true">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JHsIeixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JHsIuixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9UeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE (cif like '%C%')" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9UeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CH1IOixEeysLJGdMxs_fw" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_4CH1IeixEeysLJGdMxs_fw" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_4CH1IuixEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_4CH1I-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JHsI-ixEeysLJGdMxs_fw" count="104" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JHsI-ixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true">
         <parameters xmi:id="_2JHsJOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9V-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;CIF_NAME&quot; IS NULL  AND (cif like '%C%')" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9V-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;CIF_NAME&quot; IS NULL " language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CJqUOixEeysLJGdMxs_fw" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_4CJqUeixEeysLJGdMxs_fw" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_4CJqUuixEeysLJGdMxs_fw" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_4CJqU-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JHsJeixEeysLJGdMxs_fw" count="104" computed="true" duplicateValueCount="0">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JHsJeixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" duplicateValueCount="6">
         <parameters xmi:id="_2JHsJuixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9WOixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;CIF_NAME&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  WHERE (cif like '%C%') GROUP BY &quot;CIF_NAME&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9WOixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;CIF_NAME&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  GROUP BY &quot;CIF_NAME&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CMGkOixEeysLJGdMxs_fw" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_4CMGkeixEeysLJGdMxs_fw" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_4CMGkuixEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of duplicated records"/>
@@ -115,11 +115,11 @@
           <sqlGenericExpression xmi:id="_4CMGmeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmkurEEeysLJGdMxs_fw" count="104" computed="true" uniqueValueCount="104">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmkurEEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" uniqueValueCount="989">
         <parameters xmi:id="_xUFmk-rEEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_xcyPkOrEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;CIF_NAME&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE (cif like '%C%') GROUP BY &quot;CIF_NAME&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_xcyPkOrEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;CIF_NAME&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  GROUP BY &quot;CIF_NAME&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_xcnQcOrEEeysLJGdMxs_fw" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_xcnQcerEEeysLJGdMxs_fw" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_xcnQcurEEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of unique records"/>
@@ -132,33 +132,33 @@
           <sqlGenericExpression xmi:id="_xcnQeerEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JHsKuixEeysLJGdMxs_fw" count="104" computed="true">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JHsKuixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JHsK-ixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljl-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9UOixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE (cif like '%C%')" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9UOixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CQYAOixEeysLJGdMxs_fw" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_4CQYAeixEeysLJGdMxs_fw" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_4CQYAuixEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_4CQYA-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JHsLOixEeysLJGdMxs_fw" count="104" nullCount="1" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JHsLOixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true">
         <parameters xmi:id="_2JHsLeixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljl-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4CnkYOixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;BIRTH_DT&quot; IS NULL  AND (cif like '%C%')" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4CnkYOixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;BIRTH_DT&quot; IS NULL " language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CTbUOixEeysLJGdMxs_fw" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_4CTbUeixEeysLJGdMxs_fw" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_4CTbUuixEeysLJGdMxs_fw" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_4CTbU-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JHsLuixEeysLJGdMxs_fw" count="104" nullCount="1" computed="true" duplicateValueCount="1">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JHsLuixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" duplicateValueCount="28">
         <parameters xmi:id="_2JHsL-ixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljl-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4CnkYeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;BIRTH_DT&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  WHERE (cif like '%C%') GROUP BY &quot;BIRTH_DT&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4CnkYeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;BIRTH_DT&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  GROUP BY &quot;BIRTH_DT&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CWeoOixEeysLJGdMxs_fw" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_4CWeoeixEeysLJGdMxs_fw" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_4CWeouixEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of duplicated records"/>
@@ -171,11 +171,11 @@
           <sqlGenericExpression xmi:id="_4CWeqeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmlOrEEeysLJGdMxs_fw" count="104" nullCount="1" computed="true" uniqueValueCount="102">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmlOrEEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" uniqueValueCount="944">
         <parameters xmi:id="_xUFmlerEEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljl-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_xcyPkerEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;BIRTH_DT&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE (cif like '%C%') GROUP BY &quot;BIRTH_DT&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_xcyPkerEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;BIRTH_DT&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  GROUP BY &quot;BIRTH_DT&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_xcq60OrEEeysLJGdMxs_fw" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_xcq60erEEeysLJGdMxs_fw" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_xcq60urEEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of unique records"/>
@@ -188,33 +188,33 @@
           <sqlGenericExpression xmi:id="_xcq62erEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JHsMeixEeysLJGdMxs_fw" count="104" computed="true">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JHsMeixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JHsMuixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9U-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE (cif like '%C%')" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9U-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CYT0OixEeysLJGdMxs_fw" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_4CYT0eixEeysLJGdMxs_fw" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_4CYT0uixEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_4CYT0-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JHsM-ixEeysLJGdMxs_fw" count="104" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JHsM-ixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JHsNOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4CnkYuixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;Mail_Address&quot; IS NULL  AND (cif like '%C%')" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4CnkYuixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;Mail_Address&quot; IS NULL " language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CawEOixEeysLJGdMxs_fw" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_4CawEeixEeysLJGdMxs_fw" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_4CawEuixEeysLJGdMxs_fw" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_4CawE-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JHsNeixEeysLJGdMxs_fw" count="104" computed="true" duplicateValueCount="1">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JHsNeixEeysLJGdMxs_fw" count="1001" computed="true" duplicateValueCount="2">
         <parameters xmi:id="_2JHsNuixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4CnkY-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;Mail_Address&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  WHERE (cif like '%C%') GROUP BY &quot;Mail_Address&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4CnkY-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;Mail_Address&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  GROUP BY &quot;Mail_Address&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_4CclQOixEeysLJGdMxs_fw" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_4CclQeixEeysLJGdMxs_fw" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_4CclQuixEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of duplicated records"/>
@@ -227,11 +227,11 @@
           <sqlGenericExpression xmi:id="_4CclSeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmlurEEeysLJGdMxs_fw" count="104" computed="true" uniqueValueCount="95">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmlurEEeysLJGdMxs_fw" count="1001" computed="true" uniqueValueCount="901">
         <parameters xmi:id="_xUFml-rEEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_xcyPkurEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;Mail_Address&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE (cif like '%C%') GROUP BY &quot;Mail_Address&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_xcyPkurEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;Mail_Address&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  GROUP BY &quot;Mail_Address&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xmi:id="_xculMOrEEeysLJGdMxs_fw" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_xculMerEEeysLJGdMxs_fw" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_xculMurEEeysLJGdMxs_fw" tag="Purpose" value="evaluates the number of unique records"/>
@@ -251,7 +251,7 @@
   <dataquality.domain:Domain xmi:id="_2JPA4OixEeysLJGdMxs_fw" name="DIM_PARTY">
     <ranges xmi:id="_2JPn8OixEeysLJGdMxs_fw">
       <expressions xmi:id="_2JQPAOixEeysLJGdMxs_fw">
-        <expression xsi:type="relational:TdExpression" xmi:id="_2JQPAeixEeysLJGdMxs_fw" body="cif like '%C%'" language="SQL"/>
+        <expression xsi:type="relational:TdExpression" xmi:id="_2JQPAeixEeysLJGdMxs_fw" body="" language="SQL"/>
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
