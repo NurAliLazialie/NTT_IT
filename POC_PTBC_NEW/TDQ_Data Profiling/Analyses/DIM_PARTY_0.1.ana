@@ -21,7 +21,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:41:02.989+0700" executionDuration="429" message="" executionNumber="26" lastRunOk="true" lastExecutionNumberOk="22"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T12:02:04.366+0700" executionDuration="480" message="" executionNumber="27" lastRunOk="true" lastExecutionNumberOk="23"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
