@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.indicators.definition.userdefine="http://dataquality.indicators.definition.userdefine" xmlns:dataquality.indicators.sql="http://dataquality.indicators.sql" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_NGK2sOiyEeysLJGdMxs_fw" name="TRANSACTIONAL" creationDate="2022-06-10T18:41:01.486+0700" defaultContext="Default">
     <clientDependency href="../../metadata/connections/SQLServer__0.1.item#_q3l4GeiyEeysLJGdMxs_fw"/>
-    <clientDependency href="../../TDQ_Libraries/Indicators/User Defined Indicators/Number_0.1.definition#_iyObcOrLEeysLJGdMxs_fw"/>
+    <clientDependency href="../../TDQ_Libraries/Indicators/User Defined Indicators/Check_Values__0_0.1.definition#_iyObcOrLEeysLJGdMxs_fw"/>
     <taggedValue xmi:id="_NGK2seiyEeysLJGdMxs_fw" tag="Status" value="development"/>
     <taggedValue xmi:id="_NGK2suiyEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
     <taggedValue xmi:id="_NGK2s-iyEeysLJGdMxs_fw" tag="Purpose" value=""/>
@@ -587,7 +587,7 @@
       <indicators xsi:type="dataquality.indicators.sql:UserDefIndicator" xmi:id="_S8AUMOrMEeysLJGdMxs_fw" name="Number" count="1001" nullCount="1" computed="true" matchingValueCount="3" notMatchingValueCount="998">
         <parameters xmi:id="_S8AUMerMEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SQLServer__0.1.item#_kpfXJOiyEeysLJGdMxs_fw"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/User Defined Indicators/Number_0.1.definition#_OUFjUOrLEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/User Defined Indicators/Check_Values__0_0.1.definition#_OUFjUOrLEeysLJGdMxs_fw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_TGPOQOrMEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN TRX_BASE_AMT &lt; 0 THEN 1 END), COUNT(*) FROM  &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DTL_TRANSACTION&quot; " language="Microsoft SQL Server"/>
         <builtInIndicatorDefinition xsi:type="dataquality.indicators.definition.userdefine:UDIndicatorDefinition" xmi:id="_TGH5gOrMEeysLJGdMxs_fw" name="Number" label="Number">
           <taggedValue xmi:id="_TGH5gerMEeysLJGdMxs_fw" tag="Status" value="development"/>
