@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
   <dataquality.domain.pattern:Pattern xmi:id="_OAAOQD1iEd2irYhnXOOajA" name="Numeric" supplierDependency="_cdIwYOrFEeysLJGdMxs_fw">
     <taggedValue xmi:id="_W2G3gEEsEd2095gIBp6gJQ" tag="Purpose" value="Check the numeric format"/>
     <taggedValue xmi:id="_W2G3gUEsEd2095gIBp6gJQ" tag="Description" value="Matches all numbers"/>
@@ -13,7 +13,5 @@
       <expression xmi:id="_vMLtEVOnEeC9zOx-BAHRkg" body="'^\d*$'" language="Java"/>
     </components>
   </dataquality.domain.pattern:Pattern>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_cdIwYOrFEeysLJGdMxs_fw" kind="Usage" supplier="_OAAOQD1iEd2irYhnXOOajA">
-    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/DIM_PARTY_0.1.ana#_jhEL4OixEeysLJGdMxs_fw"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_cdIwYOrFEeysLJGdMxs_fw" kind="Usage" supplier="_OAAOQD1iEd2irYhnXOOajA"/>
 </xmi:XMI>
