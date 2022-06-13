@@ -19,7 +19,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:30:29.079+0700" executionDuration="328" message="" executionNumber="16" lastRunOk="true" lastExecutionNumberOk="13" outThreshold="true"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:31:03.741+0700" executionDuration="425" message="" executionNumber="17" lastRunOk="true" lastExecutionNumberOk="14"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -78,6 +78,12 @@
       </indicators>
       <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_K46H0OrJEeysLJGdMxs_fw" nullCount="1" computed="true" length="5">
         <parameters xmi:id="_K46H0erJEeysLJGdMxs_fw">
+          <indicatorValidDomain xmi:id="_P8IKEOrJEeysLJGdMxs_fw" name="Indicator threshold">
+            <ranges xmi:id="_P8IKEerJEeysLJGdMxs_fw" name="Value Threshold">
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_P8IKEurJEeysLJGdMxs_fw" value=""/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_P8IKE-rJEeysLJGdMxs_fw" value="8"/>
+            </ranges>
+          </indicatorValidDomain>
           <textParameter xmi:id="_K46H0urJEeysLJGdMxs_fw" useBlank="false"/>
         </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -105,8 +111,8 @@
         <parameters xmi:id="_l6la4erIEeysLJGdMxs_fw">
           <indicatorValidDomain xmi:id="_oTM4EOrIEeysLJGdMxs_fw" name="Indicator threshold">
             <ranges xmi:id="_oTOGMOrIEeysLJGdMxs_fw" name="Value Threshold">
-              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_oTOGMerIEeysLJGdMxs_fw" value=""/>
-              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_oTOGMurIEeysLJGdMxs_fw" value="7"/>
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_OwBjUOrJEeysLJGdMxs_fw" value=""/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_OwBjUerJEeysLJGdMxs_fw" value="8"/>
             </ranges>
           </indicatorValidDomain>
           <textParameter xmi:id="_l6la4urIEeysLJGdMxs_fw" useBlank="false"/>
