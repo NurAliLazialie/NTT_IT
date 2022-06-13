@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:NkBb25uf+cReZPaInDbpXCKIi6JaEu0Rr/Dr/sTd"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:6Vb2SSloEoGzMi1D0/vZxxbJEjw0qJ+pGz3PEI48"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:B0sig+EsGJu4C1G3JUliBbEYNTrhrEF983JO3f0s"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ZdA0BHzBeM5cPnuWqwhAntXJ4hReo22ZnFHDtlZF"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -124,7 +124,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PTBC_POC&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vaZaxVvW9VHfyXLnodUDLISRGLDD8d+JTQxsyY8PVdU6Sr8KhRE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YhahxnoqDZYme1C8iRqP2uKiql1Usw+tk+Cm+/gS+Gds59tIoBA="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -149,7 +149,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5A0cC2SSPJ4PCPOBqtObSin+eiUY0OrjsbeqI8pc"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:sNuu0hy3e+6YaSzLbOf3Jq6S72LSk1DEuLIZ28Yb"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DIM_PARTY&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -270,50 +270,54 @@
     <nodeData xsi:type="tdqmatching:MatchingData">
       <ruleMatchers>
         <joinkeys>
-          <columnMap key="MATCHING_TYPE" value="Exact"/>
-          <columnMap key="REFERENCE_COLUMN" value=""/>
-          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
-          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
-          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="BIRTH_DT"/>
-          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
-          <columnMap key="TOKENIZATION_TYPE" value="Same place"/>
-        </joinkeys>
-        <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact"/>
-          <columnMap key="REFERENCE_COLUMN" value=""/>
-          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
-          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="MostCommon"/>
+          <columnMap key="REFERENCE_COLUMN" value=""/>
+          <columnMap key="PARAMETER" value=","/>
+        </joinkeys>
+        <joinkeys>
           <columnMap key="INPUT_COLUMN" value="CIF"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
-          <columnMap key="TOKENIZATION_TYPE" value="Same place"/>
-        </joinkeys>
-        <joinkeys>
-          <columnMap key="MATCHING_TYPE" value="Jaro-Winkler"/>
-          <columnMap key="REFERENCE_COLUMN" value=""/>
-          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
-          <columnMap key="ATTRIBUTE_THRESHOLD" value="0.75"/>
-          <columnMap key="CONFIDENCE_WEIGHT" value="2"/>
-          <columnMap key="INPUT_COLUMN" value="CIF_NAME"/>
-          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
-          <columnMap key="TOKENIZATION_TYPE" value="Same place"/>
-        </joinkeys>
-        <joinkeys>
-          <columnMap key="MATCHING_TYPE" value="Jaro-Winkler"/>
-          <columnMap key="REFERENCE_COLUMN" value=""/>
-          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
-          <columnMap key="ATTRIBUTE_THRESHOLD" value="0.75"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
-          <columnMap key="INPUT_COLUMN" value="Mail_Address"/>
-          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
-          <columnMap key="TOKENIZATION_TYPE" value="Same place"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="MostCommon"/>
+          <columnMap key="REFERENCE_COLUMN" value=""/>
+          <columnMap key="PARAMETER" value=","/>
         </joinkeys>
-        <matchParamMap key="INTERVAL_RULE" value="0.75"/>
+        <joinkeys>
+          <columnMap key="INPUT_COLUMN" value="CIF_NAME"/>
+          <columnMap key="MATCHING_TYPE" value="Jaro-Winkler"/>
+          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="0.2"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="MostCommon"/>
+          <columnMap key="REFERENCE_COLUMN" value=""/>
+          <columnMap key="PARAMETER" value=","/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="INPUT_COLUMN" value="Mail_Address"/>
+          <columnMap key="MATCHING_TYPE" value="Jaro-Winkler"/>
+          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="0.2"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="MostCommon"/>
+          <columnMap key="REFERENCE_COLUMN" value=""/>
+          <columnMap key="PARAMETER" value=","/>
+        </joinkeys>
+        <matchParamMap key="INTERVAL_RULE" value="0.85"/>
         <matchParamMap key="MATCHING_ALGORITHM" value="TSWOOSH_MATCHER"/>
       </ruleMatchers>
     </nodeData>
@@ -384,13 +388,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_498971bc-8abc-4d5f-9226-652db82894c9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NLFJH2ZS1B9MEo/CFWONi0sRgYt9H4+mVk6akuLuWIwCIte/xRTt2VMBvKYbVRBuen07si2bvBfp&#13;
-7tNc0FPiPQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0d9c284e-6b02-4ff0-b903-a6a81218d27b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OI7au1r3zUTwIV+I1fHrx7Es92I9erejpxOKsovSQGz14CENcRiu0EbyQIiM1Fvvy7hDi4e+z64X&#13;
-hvVFoFQ6Kg==</DigestValue></Reference></SignedInfo><SignatureValue>A69oY/I5DiFHNeyTonQTJLrgc9nMP5sxDz+4s9g/8F4bEqPX8WfJ/hyjqkpbFAgfdLAxpJ8Tqruy&#13;
-dSCxht6mC+MfJQrqI4GVnvaQFA9Ihxd4HI7RDSCIizCN2Q8u9pTQO4Bv2OfS1Qb8lv/UgBrlkPo4&#13;
-0+t66pBusVg/vO+WIEQI0Fv/nId2orSREOJ1nE5W/t8yt1D7vF6T01DGI8QG8YmGow2BMCOlSXqD&#13;
-HtPR//Wj6cHFdfr6XXrfhsIyehR73qwKH9vCi5b/6BlfkgSFeqHqTpIMHdGa8Yt+FjW5rc+H4VFG&#13;
-Isrx/I8C2cXUBFAFWcGMFsipePlMfbIzXCs0aw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1510220e-c633-4bd6-a1e0-a5d7e0341950"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SJJC1NdGgqDzWNyNB7gRpaSXNvGdljcFTGHOSGKBT9427eeVZL2ETKEBPdZU2UQbDV7LR8C2Gnex&#13;
++CJhnW/Vxg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bfbcf8a7-9034-48ef-97ed-3dd1c37bbe7b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X5tAmzlsW+vPYuVxbXFri6GQRIajqIO/NAxdVwhqX7j/Dce+wMSUAaB0L4w5bv65oOBSga+hNPdF&#13;
+4lvz7eQyxg==</DigestValue></Reference></SignedInfo><SignatureValue>cDrTZFJ6ixt5LmH9U3jupqbNkmfV80R+jaf7fuhPXCcaX3wXIgqjQK/2ttVYp4L0lyrCqQrb9+Rk&#13;
+kxuYyP02KTqX4+6k9vxc47c3OZKeG9JUweXUXJ1wYi1FNaw7UAeSDnwN5OZe9sXOn99DJLDrir2y&#13;
+J86sW6VMZVovxWbBvoktOCfQaVDkMF7IceYQBJ9iy4CM+KkTxr273AosRrAEqF/wFsHqUXUfpAHe&#13;
+1Q0Jtc0cvVvNCmS8b7SDuNoW0smum8kP65J/YT9QxChMRVpU9Ed4Gst0uCFlTOsMlP2LNyfatw9M&#13;
+C8ogT2fQZ/cGMTjpkAvxBvRyRMxhXU8Yg6QH9g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -412,4 +416,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0d9c284e-6b02-4ff0-b903-a6a81218d27b" Target="#_498971bc-8abc-4d5f-9226-652db82894c9"><Timestamp>2022-06-13 07:42:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bfbcf8a7-9034-48ef-97ed-3dd1c37bbe7b" Target="#_1510220e-c633-4bd6-a1e0-a5d7e0341950"><Timestamp>2022-06-13 07:46:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
