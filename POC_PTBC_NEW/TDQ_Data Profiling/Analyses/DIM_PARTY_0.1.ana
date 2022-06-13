@@ -2,7 +2,8 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_jhEL4OixEeysLJGdMxs_fw" name="DIM_PARTY" creationDate="2022-06-10T18:36:22.371+0700" defaultContext="Default">
     <clientDependency href="../../metadata/connections/SqlServer_0.1.item#_2JHFEOixEeysLJGdMxs_fw"/>
-    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_q5wK8OrFEeysLJGdMxs_fw"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Yahoo_0.1.pattern#_pVo6kOrKEeysLJGdMxs_fw"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Gmail_from_Google_0.1.pattern#_pV29AOrKEeysLJGdMxs_fw"/>
     <taggedValue xmi:id="_jhEL4eixEeysLJGdMxs_fw" tag="Status" value="development"/>
     <taggedValue xmi:id="_jhEL4uixEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
     <taggedValue xmi:id="_jhEL4-ixEeysLJGdMxs_fw" tag="Purpose" value=""/>
@@ -20,7 +21,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:40:20.255+0700" executionDuration="400" message="Unsupported use of regular expressions on this database. Remove all Pattern indicators from this analysis, please." executionNumber="25" lastExecutionNumberOk="21"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:41:02.989+0700" executionDuration="429" message="" executionNumber="26" lastRunOk="true" lastExecutionNumberOk="22"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -148,7 +149,7 @@
           <sqlGenericExpression xmi:id="_sQ7cd-rJEeysLJGdMxs_fw" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_sIkxterJEeysLJGdMxs_fw" nullCount="2" computed="true" distinctValueCount="5" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000574000839393939393939417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000005D707371007E00030000000000000002740007393939393939417371007E0003000000000000000974000839393939393939397371007E000300000000000003807400063939393939417371007E0003000000000000000178">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_sIkxterJEeysLJGdMxs_fw" count="1001" nullCount="2" computed="true" distinctValueCount="5" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000574000839393939393939417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000005D707371007E00030000000000000002740007393939393939417371007E0003000000000000000974000839393939393939397371007E000300000000000003807400063939393939417371007E0003000000000000000178">
         <parameters xmi:id="_sIkxturJEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
@@ -379,14 +380,25 @@
           <sqlGenericExpression xmi:id="_sRHpt-rJEeysLJGdMxs_fw" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_i_LHwOrKEeysLJGdMxs_fw" name="Email Address">
-        <parameters xmi:id="_i_LHwerKEeysLJGdMxs_fw">
-          <dataValidDomain xmi:id="_i_LHwurKEeysLJGdMxs_fw">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_rC5TcD4XEd24WPpU35gV1A"/>
+      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_pVctUOrKEeysLJGdMxs_fw" name="Email Yahoo" count="1001" computed="true" matchingValueCount="25" notMatchingValueCount="976">
+        <parameters xmi:id="_pVctUerKEeysLJGdMxs_fw">
+          <dataValidDomain xmi:id="_pVctUurKEeysLJGdMxs_fw">
+            <patterns href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Yahoo_0.1.pattern#_jyAMQbo4Ed2fB5cidg4eog"/>
           </dataValidDomain>
         </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/SQL_Pattern_Matching_0.1.definition#_Z4vXcERgEd2RSqFSgXiIfA"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_pfAR8OrKEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN &quot;Mail_Address&quot; LIKE '%@yahoo.%' THEN 1 END), COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_pVctU-rKEeysLJGdMxs_fw" name="Email Gmail from Google" count="1001" computed="true" matchingValueCount="25" notMatchingValueCount="976">
+        <parameters xmi:id="_pVctVOrKEeysLJGdMxs_fw">
+          <dataValidDomain xmi:id="_pVctVerKEeysLJGdMxs_fw">
+            <patterns href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Gmail_from_Google_0.1.pattern#_5tDp8LoaEd2CVq07lsaT2w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/SQL_Pattern_Matching_0.1.definition#_Z4vXcERgEd2RSqFSgXiIfA"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_pfAR8erKEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN &quot;Mail_Address&quot; LIKE '%@gmail.com' THEN 1 END), COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
       </indicators>
     </results>
     <parameters xmi:id="_jhEL6eixEeysLJGdMxs_fw" dataFilter="_2JPA4OixEeysLJGdMxs_fw" analysisType="Multiple Column Analysis"/>
