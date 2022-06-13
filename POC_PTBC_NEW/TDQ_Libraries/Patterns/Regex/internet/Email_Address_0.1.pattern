@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
   <dataquality.domain.pattern:Pattern xmi:id="_rC5TcD4XEd24WPpU35gV1A" name="Email Address" supplierDependency="_q5wK8OrFEeysLJGdMxs_fw">
     <taggedValue xmi:id="_oU4qQEEmEd2095gIBp6gJQ" tag="Purpose" value="Check the validity of email addresses."/>
     <taggedValue xmi:id="_oU4qQUEmEd2095gIBp6gJQ" tag="Description" value="Matches the email addresses"/>
@@ -19,5 +19,7 @@
       <expression xmi:id="_uGz4sSEmEeOVt5Cai2uv4A" body="'^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$'" language="SQL" modificationDate="2013-09-19 14:26:31"/>
     </components>
   </dataquality.domain.pattern:Pattern>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_q5wK8OrFEeysLJGdMxs_fw" kind="Usage" supplier="_rC5TcD4XEd24WPpU35gV1A"/>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_q5wK8OrFEeysLJGdMxs_fw" kind="Usage" supplier="_rC5TcD4XEd24WPpU35gV1A">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/DIM_PARTY_0.1.ana#_jhEL4OixEeysLJGdMxs_fw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
