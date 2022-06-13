@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.indicators.definition.userdefine:UDIndicatorDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.indicators.definition.userdefine="http://dataquality.indicators.definition.userdefine" xmi:id="_OUFjUOrLEeysLJGdMxs_fw" name="Number" label="Number">
-  <taggedValue xmi:id="_OUFjUerLEeysLJGdMxs_fw" tag="Status" value="development"/>
-  <taggedValue xmi:id="_OUFjUurLEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
-  <taggedValue xmi:id="_OUFjU-rLEeysLJGdMxs_fw" tag="Purpose" value=""/>
-  <taggedValue xmi:id="_OUFjVOrLEeysLJGdMxs_fw" tag="Description" value=""/>
-  <taggedValue xmi:id="_OUFjVerLEeysLJGdMxs_fw" tag="Version" value="0.1"/>
-  <taggedValue xmi:id="_OUFjVurLEeysLJGdMxs_fw" tag="Validation_Status" value="true"/>
-  <categories href="../../.Talend.definition#_Ba7OYXsXEd63r-VLO3_0OQ"/>
-  <sqlGenericExpression xmi:id="_e3XIYOrLEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN  THEN 1 END), COUNT(*) FROM  &lt;%=__TABLE_NAME__%> WHERE (TRX_BASE_AMT &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34" expressionVariableMap="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F40000000000003770800000004000000027400123C57484552455F544558545F4649454C443E7400105452585F424153455F414D54203C20307400203C4D41544348494E475F45585052455353494F4E5F544558545F4649454C443E74000078"/>
-  <viewInvalidRowsExpression xmi:id="_e3XIYurLEeysLJGdMxs_fw" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE NOT ( (TRX_BASE_AMT &lt; 0)) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34"/>
-  <viewValidRowsExpression xmi:id="_e3XIYerLEeysLJGdMxs_fw" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE  (TRX_BASE_AMT &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34"/>
-  <viewInvalidValuesExpression xmi:id="_e3XIZOrLEeysLJGdMxs_fw" body="SELECT  &lt;%=__COLUMN_NAMES__%> FROM  &lt;%=__TABLE_NAME__%> WHERE NOT ( (TRX_BASE_AMT &lt; 0)) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34"/>
-  <viewValidValuesExpression xmi:id="_e3XIY-rLEeysLJGdMxs_fw" body="SELECT &lt;%=__COLUMN_NAMES__%>  FROM  &lt;%=__TABLE_NAME__%> WHERE  (TRX_BASE_AMT &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34"/>
-</dataquality.indicators.definition.userdefine:UDIndicatorDefinition>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.definition.userdefine="http://dataquality.indicators.definition.userdefine" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.indicators.definition.userdefine:UDIndicatorDefinition xmi:id="_OUFjUOrLEeysLJGdMxs_fw" name="Number" supplierDependency="_iyObcOrLEeysLJGdMxs_fw" label="Number">
+    <taggedValue xmi:id="_OUFjUerLEeysLJGdMxs_fw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_OUFjUurLEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
+    <taggedValue xmi:id="_OUFjU-rLEeysLJGdMxs_fw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_OUFjVOrLEeysLJGdMxs_fw" tag="Description" value=""/>
+    <taggedValue xmi:id="_OUFjVerLEeysLJGdMxs_fw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_OUFjVurLEeysLJGdMxs_fw" tag="Validation_Status" value="true"/>
+    <categories href="../../.Talend.definition#_Ba7OYXsXEd63r-VLO3_0OQ"/>
+    <sqlGenericExpression xmi:id="_e3XIYOrLEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN  THEN 1 END), COUNT(*) FROM  &lt;%=__TABLE_NAME__%> WHERE (TRX_BASE_AMT &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34" expressionVariableMap="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F40000000000003770800000004000000027400123C57484552455F544558545F4649454C443E7400105452585F424153455F414D54203C20307400203C4D41544348494E475F45585052455353494F4E5F544558545F4649454C443E74000078"/>
+    <viewInvalidRowsExpression xmi:id="_e3XIYurLEeysLJGdMxs_fw" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE NOT ( (TRX_BASE_AMT &lt; 0)) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34"/>
+    <viewValidRowsExpression xmi:id="_e3XIYerLEeysLJGdMxs_fw" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE  (TRX_BASE_AMT &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34"/>
+    <viewInvalidValuesExpression xmi:id="_e3XIZOrLEeysLJGdMxs_fw" body="SELECT  &lt;%=__COLUMN_NAMES__%> FROM  &lt;%=__TABLE_NAME__%> WHERE NOT ( (TRX_BASE_AMT &lt; 0)) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34"/>
+    <viewValidValuesExpression xmi:id="_e3XIY-rLEeysLJGdMxs_fw" body="SELECT &lt;%=__COLUMN_NAMES__%>  FROM  &lt;%=__TABLE_NAME__%> WHERE  (TRX_BASE_AMT &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:46:34"/>
+  </dataquality.indicators.definition.userdefine:UDIndicatorDefinition>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_iyObcOrLEeysLJGdMxs_fw" kind="Usage" supplier="_OUFjUOrLEeysLJGdMxs_fw">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TRANSACTIONAL_0.1.ana#_NGK2sOiyEeysLJGdMxs_fw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>
