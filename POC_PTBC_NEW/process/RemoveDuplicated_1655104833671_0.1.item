@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:d+HL+CkVkq2g4eteeLfhnE3XHX2yRIv3QFuWascr"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:8c6a5rAgk3omys+YlKtWegGxeGf7m3spVlNiacy7"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4wrTRk5dUg1DkGf8yzcWqLVNaAXQDrBZJYPbR98b"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9pU48Iqam66ouddmzmd9u0RQeSZQDDsPIZnzOQCu"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -124,7 +124,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PTBC_POC&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Jj9qHcSRZCLnPHv3DVrxo5OvxPOk9fYv/3oqUQL2lblIyAVGn3Q="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DVRvFZzBGqzvnaOiwuoWQ8EVzcv4TCX6TT+qXk+U3fi/scmCwqs="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DTL_TRANSACTION&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -196,7 +196,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PTBC_POC&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:10+NnizmJdggG7Vt2fB20iHTS8nUBcnxyF10IrR0ruE0LXmRMqw="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yHleG70rEdiO7QgwvHnsbQ0ekYbNEdAIx2CCCqaHGLgL9epXj5c="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DTL_TRANSACTION_unique&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend_8.0.1/Administrator/workspace_fentri/mssql_data.txt&quot;"/>
@@ -220,37 +220,43 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="384">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend_8.0.1/Administrator/workspace_fentri/reject.csv&quot;"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/documents/checkdata&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" show="false" value="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="BUSS_DT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Dqd8IrdbT9AUs9V1hNowNhp7U5VA6XrNcbgZQHTC"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="SPLIT" value="false"/>
-    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
-    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="CHECK" name="TRUNCATE_EXCEEDING_CHARACTERS" show="false" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STREAMING_APPEND" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="DTL_TRANSACTION" name="tFileOutputDelimited_1">
+    <metadata connector="FLOW" label="DTL_TRANSACTION" name="tFileOutputExcel_1">
       <column comment="" key="false" length="10" name="BUSS_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
         <additionalField key="Content Type" value="Interval"/>
@@ -265,7 +271,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="DUPLICATE" label="row3" lineStyle="0" metaname="tUniqRow_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tUniqRow_1" target="tFileOutputDelimited_1">
+  <connection connectorName="DUPLICATE" label="row3" lineStyle="0" metaname="DUPLICATE" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tUniqRow_1" target="tFileOutputExcel_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
@@ -277,13 +283,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_89958b51-7e6f-449e-a946-f3c43281c437"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X3yosJUUEE/kS1Mt3byUPMCFaFcCsM2rPnYSpH+72CTQDvmxBIAAs9FRYvOIbPF766YkBOESZzrU&#13;
-yB4K8QLXnQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ccdde222-7cc9-4c0c-9d32-ecf4faec4f86"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IUWuEJhUrfdsTum1GhXlSLbsW9seDXwzOlYaqChPE2PjkhLKXj8PLanqyPiUF5NojhXrQSglhMS/&#13;
-ZR8XQ55kuw==</DigestValue></Reference></SignedInfo><SignatureValue>npSd0iFL9LH0sAM9+seAcTmwrHnbesifFmzu9J8tkrs8zxXcCCN2OZoLv2aC6LobUEYNQOCdAtfW&#13;
-wdbJVKAUZBW4opHoIzL9LQqfvTrAgpfq9imHPprnoNu7CGcHycWNYUwPUZgtOZuv/uI1x4NVaa0Q&#13;
-4og35ASmxH676Gd8mJ3MO/TWEZPh7ctPyw1LOnXDYVcIGyQPyeYcQAtLo+JTstgfL0V6EdjAF/3T&#13;
-32RSMRrhKxPNuR+DnixpaHK7ELt4OVkbyaCTLW4IkUvXfE2Ch9omX2BOcOrbicfo/jFIbglMkIIl&#13;
-zrF21Bft9jxYJdTDnKBfYGs8O/UB+vDr/HZNPA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_58562133-3aaa-4278-abad-de0b6f7b92d7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sXxu/9fqJ0v4LFmvCmnLQ9f1ynyALYJ4dFD3mwVqrwOE3lhQq29IhqBPDPia9DdA6iExohJ/ja0o&#13;
+Zv5c9PfVaQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_921fdde6-5831-47e9-b53f-94f214c57edf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UIbubT/85qYO3JbF47e1TOii879NniAl8zxXf7iN4/AffRwUVF2wmbRq1zu30dggBYs2Mw23T8IQ&#13;
+qssMwWodRQ==</DigestValue></Reference></SignedInfo><SignatureValue>kxQF0gEmhAzODWyouPDqpvnCtYQrLKcUgCVEVGCg8Eo4WHPqC4KM77U4cok61QFJOngXRr9JjRJ1&#13;
+AMyipUjR+iXYdb4MUq+ZLSpIDpjHB7chcaVH52C4znNj5psT/H2VQudsxc0LoZ6bnoFSEdmTdm/z&#13;
+N0R5yuZ/mV5QDRzieT1mXItXbKeBu9X1td6hAI7z2KLFlyNNWrIMAK0NUxu/SuahyBszqmHtQO0U&#13;
+h12b21Tz44WAnaIdJlnz+bEQCrz1KkaN8dS1H9qo0gL7IDZo0BdmRTRGTETyYkd9+totLT8Yi2lH&#13;
+vO4kfvdIUXSy+vAufR9BUqNPdxm3H6oJ/istvg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -305,4 +311,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ccdde222-7cc9-4c0c-9d32-ecf4faec4f86" Target="#_89958b51-7e6f-449e-a946-f3c43281c437"><Timestamp>2022-06-13 07:20:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_921fdde6-5831-47e9-b53f-94f214c57edf" Target="#_58562133-3aaa-4278-abad-de0b6f7b92d7"><Timestamp>2022-06-13 07:21:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
