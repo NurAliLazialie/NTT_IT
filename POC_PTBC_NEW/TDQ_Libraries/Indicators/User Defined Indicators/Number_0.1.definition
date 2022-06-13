@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.indicators.definition.userdefine="http://dataquality.indicators.definition.userdefine" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.definition.userdefine="http://dataquality.indicators.definition.userdefine" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
   <dataquality.indicators.definition.userdefine:UDIndicatorDefinition xmi:id="_OUFjUOrLEeysLJGdMxs_fw" name="Number" supplierDependency="_iyObcOrLEeysLJGdMxs_fw" label="Number">
     <taggedValue xmi:id="_OUFjUerLEeysLJGdMxs_fw" tag="Status" value="development"/>
     <taggedValue xmi:id="_OUFjUurLEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
@@ -14,5 +14,7 @@
     <viewInvalidValuesExpression xmi:id="_3hRdZOrLEeysLJGdMxs_fw" body="SELECT  &lt;%=__COLUMN_NAMES__%> FROM  &lt;%=__TABLE_NAME__%> WHERE NOT ( (&lt;%=__COLUMN_NAMES__%> &lt; 0)) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:49:20"/>
     <viewValidValuesExpression xmi:id="_3hRdY-rLEeysLJGdMxs_fw" body="SELECT &lt;%=__COLUMN_NAMES__%>  FROM  &lt;%=__TABLE_NAME__%> WHERE  (&lt;%=__COLUMN_NAMES__%> &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:49:20"/>
   </dataquality.indicators.definition.userdefine:UDIndicatorDefinition>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_iyObcOrLEeysLJGdMxs_fw" kind="Usage" supplier="_OUFjUOrLEeysLJGdMxs_fw"/>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_iyObcOrLEeysLJGdMxs_fw" kind="Usage" supplier="_OUFjUOrLEeysLJGdMxs_fw">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TRANSACTIONAL_0.1.ana#_NGK2sOiyEeysLJGdMxs_fw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
