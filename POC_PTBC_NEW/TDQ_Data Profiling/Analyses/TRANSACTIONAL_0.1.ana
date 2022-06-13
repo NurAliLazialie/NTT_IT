@@ -24,7 +24,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SQLServer__0.1.item#_kpfXLOiyEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_NGK2t-iyEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_NGK2uOiyEeysLJGdMxs_fw" executionDate="2022-06-13T10:49:57.114+0700" executionDuration="488" message="For more information please refer to the Error Log view." executionNumber="5" lastExecutionNumberOk="3"/>
+      <resultMetadata xmi:id="_NGK2uOiyEeysLJGdMxs_fw" executionDate="2022-06-13T10:52:51.746+0700" executionDuration="448" message="" executionNumber="6" lastRunOk="true" lastExecutionNumberOk="4"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_q3l4EeiyEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_q3l4EuiyEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SQLServer__0.1.item#_kpfXEOiyEeysLJGdMxs_fw"/>
@@ -584,23 +584,23 @@
           <sqlGenericExpression xmi:id="_rC5wOeiyEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators.sql:UserDefIndicator" xmi:id="_46Ax8OrLEeysLJGdMxs_fw" name="Number" count="1001" nullCount="1">
-        <parameters xmi:id="_46Ax8erLEeysLJGdMxs_fw"/>
+      <indicators xsi:type="dataquality.indicators.sql:UserDefIndicator" xmi:id="_S8AUMOrMEeysLJGdMxs_fw" name="Number" count="1001" nullCount="1" computed="true" matchingValueCount="0" notMatchingValueCount="1001">
+        <parameters xmi:id="_S8AUMerMEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SQLServer__0.1.item#_kpfXJOiyEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/User Defined Indicators/Number_0.1.definition#_OUFjUOrLEeysLJGdMxs_fw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_5E0TwOrLEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN  THEN 1 END), COUNT(*) FROM  &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DTL_TRANSACTION&quot; WHERE (&quot;TRX_BASE_AMT&quot; &lt; 0) " language="Microsoft SQL Server"/>
-        <builtInIndicatorDefinition xsi:type="dataquality.indicators.definition.userdefine:UDIndicatorDefinition" xmi:id="_5EuNIOrLEeysLJGdMxs_fw" name="Number" label="Number">
-          <taggedValue xmi:id="_5EuNIerLEeysLJGdMxs_fw" tag="Status" value="development"/>
-          <taggedValue xmi:id="_5EuNIurLEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
-          <taggedValue xmi:id="_5EuNI-rLEeysLJGdMxs_fw" tag="Purpose" value=""/>
-          <taggedValue xmi:id="_5EuNJOrLEeysLJGdMxs_fw" tag="Description" value=""/>
-          <taggedValue xmi:id="_5EuNJerLEeysLJGdMxs_fw" tag="Version" value="0.1"/>
-          <taggedValue xmi:id="_5EuNJurLEeysLJGdMxs_fw" tag="Validation_Status" value="true"/>
-          <sqlGenericExpression xmi:id="_5EuNJ-rLEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN  THEN 1 END), COUNT(*) FROM  &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:49:20" expressionVariableMap="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F40000000000003770800000004000000027400123C57484552455F544558545F4649454C443E7400193C253D5F5F434F4C554D4E5F4E414D45535F5F253E203C20307400203C4D41544348494E475F45585052455353494F4E5F544558545F4649454C443E74000078"/>
-          <viewInvalidRowsExpression xmi:id="_5EuNKOrLEeysLJGdMxs_fw" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE NOT ( (&lt;%=__COLUMN_NAMES__%> &lt; 0)) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:49:20"/>
-          <viewValidRowsExpression xmi:id="_5EuNKerLEeysLJGdMxs_fw" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE  (&lt;%=__COLUMN_NAMES__%> &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:49:20"/>
-          <viewInvalidValuesExpression xmi:id="_5EuNKurLEeysLJGdMxs_fw" body="SELECT  &lt;%=__COLUMN_NAMES__%> FROM  &lt;%=__TABLE_NAME__%> WHERE NOT ( (&lt;%=__COLUMN_NAMES__%> &lt; 0)) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:49:20"/>
-          <viewValidValuesExpression xmi:id="_5EuNK-rLEeysLJGdMxs_fw" body="SELECT &lt;%=__COLUMN_NAMES__%>  FROM  &lt;%=__TABLE_NAME__%> WHERE  (&lt;%=__COLUMN_NAMES__%> &lt; 0) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:49:20"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_TGPOQOrMEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN TRX_BASE_AMT &lt; 0 THEN 1 END), COUNT(*) FROM  &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DTL_TRANSACTION&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xsi:type="dataquality.indicators.definition.userdefine:UDIndicatorDefinition" xmi:id="_TGH5gOrMEeysLJGdMxs_fw" name="Number" label="Number">
+          <taggedValue xmi:id="_TGH5gerMEeysLJGdMxs_fw" tag="Status" value="development"/>
+          <taggedValue xmi:id="_TGH5gurMEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
+          <taggedValue xmi:id="_TGH5g-rMEeysLJGdMxs_fw" tag="Purpose" value=""/>
+          <taggedValue xmi:id="_TGH5hOrMEeysLJGdMxs_fw" tag="Description" value=""/>
+          <taggedValue xmi:id="_TGH5herMEeysLJGdMxs_fw" tag="Version" value="0.1"/>
+          <taggedValue xmi:id="_TGH5hurMEeysLJGdMxs_fw" tag="Validation_Status" value="true"/>
+          <sqlGenericExpression xmi:id="_TGH5h-rMEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN TRX_BASE_AMT &lt; 0 THEN 1 END), COUNT(*) FROM  &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:52:38" expressionVariableMap="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F40000000000003770800000004000000027400123C57484552455F544558545F4649454C443E7400007400203C4D41544348494E475F45585052455353494F4E5F544558545F4649454C443E7400105452585F424153455F414D54203C203078"/>
+          <viewInvalidRowsExpression xmi:id="_TGH5iOrMEeysLJGdMxs_fw" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE NOT (TRX_BASE_AMT &lt; 0  ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:52:38"/>
+          <viewValidRowsExpression xmi:id="_TGH5ierMEeysLJGdMxs_fw" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE TRX_BASE_AMT &lt; 0   &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:52:38"/>
+          <viewInvalidValuesExpression xmi:id="_TGH5iurMEeysLJGdMxs_fw" body="SELECT  &lt;%=__COLUMN_NAMES__%> FROM  &lt;%=__TABLE_NAME__%> WHERE NOT (TRX_BASE_AMT &lt; 0  ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:52:38"/>
+          <viewValidValuesExpression xmi:id="_TGH5i-rMEeysLJGdMxs_fw" body="SELECT &lt;%=__COLUMN_NAMES__%>  FROM  &lt;%=__TABLE_NAME__%> WHERE TRX_BASE_AMT &lt; 0   &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-13 10:52:38"/>
         </builtInIndicatorDefinition>
       </indicators>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_q3mfUuiyEeysLJGdMxs_fw" count="1001" computed="true">
