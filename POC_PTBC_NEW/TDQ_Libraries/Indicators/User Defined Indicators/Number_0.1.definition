@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.indicators.definition.userdefine:UDIndicatorDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.indicators.definition.userdefine="http://dataquality.indicators.definition.userdefine" xmi:id="_OUFjUOrLEeysLJGdMxs_fw" name="Number" label="Number">
+  <taggedValue xmi:id="_OUFjUerLEeysLJGdMxs_fw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_OUFjUurLEeysLJGdMxs_fw" tag="Author" value="fentri@ntt.com"/>
+  <taggedValue xmi:id="_OUFjU-rLEeysLJGdMxs_fw" tag="Purpose"/>
+  <taggedValue xmi:id="_OUFjVOrLEeysLJGdMxs_fw" tag="Description"/>
+  <taggedValue xmi:id="_OUFjVerLEeysLJGdMxs_fw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_OUFjVurLEeysLJGdMxs_fw" tag="Validation_Status" value="true"/>
+  <categories href="../../.Talend.definition#_b5F7QHqTEd67hM2eKD3QgQ"/>
+</dataquality.indicators.definition.userdefine:UDIndicatorDefinition>
