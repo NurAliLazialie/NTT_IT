@@ -19,7 +19,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:31:03.741+0700" executionDuration="425" message="" executionNumber="17" lastRunOk="true" lastExecutionNumberOk="14"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T10:31:23.039+0700" executionDuration="372" message="" executionNumber="18" lastRunOk="true" lastExecutionNumberOk="15" outThreshold="true"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -80,8 +80,8 @@
         <parameters xmi:id="_K46H0erJEeysLJGdMxs_fw">
           <indicatorValidDomain xmi:id="_P8IKEOrJEeysLJGdMxs_fw" name="Indicator threshold">
             <ranges xmi:id="_P8IKEerJEeysLJGdMxs_fw" name="Value Threshold">
-              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_P8IKEurJEeysLJGdMxs_fw" value=""/>
-              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_P8IKE-rJEeysLJGdMxs_fw" value="8"/>
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_Svis4OrJEeysLJGdMxs_fw" value="8"/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_Svis4erJEeysLJGdMxs_fw" value=""/>
             </ranges>
           </indicatorValidDomain>
           <textParameter xmi:id="_K46H0urJEeysLJGdMxs_fw" useBlank="false"/>
