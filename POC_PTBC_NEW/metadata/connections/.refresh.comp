@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_jcAvsOvFEeysC_GgI3oOMA" name="SQLServer_" supplierDependency="_jcAvvevFEeysC_GgI3oOMA" id="_bFZKoOiyEeysLJGdMxs_fw" label="SQLServer_" dataPackage="_jcAvvuvFEeysC_GgI3oOMA" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://192.168.0.23:1433/PTBC_POC;" dbVersionString="JTDS" Port="1433" Username="sa" Password="enc:system.encryption.key.v1:FM3fQi9g81FWkRjw8iOVJMAysM9MgtvkCTwwmr826nojuGx/" ServerName="192.168.0.23" DatasourceName="" FileFieldName="" SID="PTBC_POC" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_jcAvsevFEeysC_GgI3oOMA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_jcAvsuvFEeysC_GgI3oOMA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_jcAvs-vFEeysC_GgI3oOMA" tag="Status" value=""/>
+    <taggedValue xmi:id="_jcAvtOvFEeysC_GgI3oOMA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_jcAvtevFEeysC_GgI3oOMA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_jcAvtuvFEeysC_GgI3oOMA" tag="Description" value=""/>
+    <taggedValue xmi:id="_jcAvt-vFEeysC_GgI3oOMA" tag="Author" value=""/>
+    <taggedValue xmi:id="_jcAvuOvFEeysC_GgI3oOMA" tag="otherParameter"/>
+    <taggedValue xmi:id="_jcAvuevFEeysC_GgI3oOMA" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_jcAvuuvFEeysC_GgI3oOMA" tag="DB ProductVersion" value="14.00.1000"/>
+    <taggedValue xmi:id="_jcAvu-vFEeysC_GgI3oOMA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_jcAvvOvFEeysC_GgI3oOMA" key="CONN_PARA_KEY_USERNAME" value="sa"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_jcAvvevFEeysC_GgI3oOMA" kind="Usage" supplier="_jcAvsOvFEeysC_GgI3oOMA"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_jcAvvuvFEeysC_GgI3oOMA" name="PTBC_POC" dataManager="_jcAvsOvFEeysC_GgI3oOMA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWwOvFEeysC_GgI3oOMA" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWwevFEeysC_GgI3oOMA" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWwuvFEeysC_GgI3oOMA" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWw-vFEeysC_GgI3oOMA" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWxOvFEeysC_GgI3oOMA" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWxevFEeysC_GgI3oOMA" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWxuvFEeysC_GgI3oOMA" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWx-vFEeysC_GgI3oOMA" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWyOvFEeysC_GgI3oOMA" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWyevFEeysC_GgI3oOMA" name="dbo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWyuvFEeysC_GgI3oOMA" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWy-vFEeysC_GgI3oOMA" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_jcBWzOvFEeysC_GgI3oOMA" name="sys"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
