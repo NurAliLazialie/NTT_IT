@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_W3BcwOvTEeysC_GgI3oOMA" name="TRANSACTIONAL" creationDate="2022-06-14T18:15:53.881+0700">
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.reports="http://dataquality.reports" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_W3BcwOvTEeysC_GgI3oOMA" name="TRANSACTIONAL" creationDate="2022-06-14T18:15:53.881+0700" defaultContext="Default">
   <clientDependency href="../Analyses/TRANSACTIONAL_0.1.ana#_W3CD0OvTEeysC_GgI3oOMA"/>
   <taggedValue xmi:id="_W3BcwevTEeysC_GgI3oOMA" tag="OutputFolder" value=""/>
-  <taggedValue xmi:id="_W3BcwuvTEeysC_GgI3oOMA" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
-  <taggedValue xmi:id="_W3Bcw-vTEeysC_GgI3oOMA" tag="REP_DBINFO_DBVERSION" value=""/>
-  <taggedValue xmi:id="_W3BcxOvTEeysC_GgI3oOMA" tag="REP_DBINFO_HOST" value=""/>
-  <taggedValue xmi:id="_W3BcxevTEeysC_GgI3oOMA" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_W3BcwuvTEeysC_GgI3oOMA" tag="REP_DBINFO_DBTYPE" value="Microsoft SQL Server"/>
+  <taggedValue xmi:id="_W3Bcw-vTEeysC_GgI3oOMA" tag="REP_DBINFO_DBVERSION" value="JTDS"/>
+  <taggedValue xmi:id="_W3BcxOvTEeysC_GgI3oOMA" tag="REP_DBINFO_HOST" value="192.168.0.23"/>
+  <taggedValue xmi:id="_W3BcxevTEeysC_GgI3oOMA" tag="REP_DBINFO_PORT" value="1433"/>
   <taggedValue xmi:id="_W3BcxuvTEeysC_GgI3oOMA" tag="REP_DBINFO_WAREHOUSE" value=""/>
-  <taggedValue xmi:id="_W3Bcx-vTEeysC_GgI3oOMA" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
-  <taggedValue xmi:id="_W3BcyOvTEeysC_GgI3oOMA" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_W3Bcx-vTEeysC_GgI3oOMA" tag="REP_DBINFO_DBNAME" value="PTBC_POC"/>
+  <taggedValue xmi:id="_W3BcyOvTEeysC_GgI3oOMA" tag="REP_DBINFO_SCHEMA" value="dbo"/>
   <taggedValue xmi:id="_W3BcyevTEeysC_GgI3oOMA" tag="REP_DBINFO_USER" value="sa"/>
-  <taggedValue xmi:id="_W3BcyuvTEeysC_GgI3oOMA" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:YY0QY2O78tDtGmKr25wCI8Kxu3BPw97MsR7h6Q=="/>
+  <taggedValue xmi:id="_W3BcyuvTEeysC_GgI3oOMA" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:ACCkPC1x+ycJF/fvSQolVX1OtWsTu8+OOh8bxMTWPur6g6r8"/>
   <taggedValue xmi:id="_W3Bcy-vTEeysC_GgI3oOMA" tag="REP_DBINFO_PARAMETER" value=""/>
-  <taggedValue xmi:id="_W3BczOvTEeysC_GgI3oOMA" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\Talend_8.0.1\Administrator\workspace_fentri\TDQ_reporting_db\talend_dq"/>
-  <taggedValue xmi:id="_W3BczevTEeysC_GgI3oOMA" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
-  <taggedValue xmi:id="_W3BczuvTEeysC_GgI3oOMA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_W3BczOvTEeysC_GgI3oOMA" tag="REP_DBINFO_URL" value="jdbc:jtds:sqlserver://192.168.0.23:1433/PTBC_POC;"/>
+  <taggedValue xmi:id="_W3BczevTEeysC_GgI3oOMA" tag="REP_DBINFO_DRIVER" value="net.sourceforge.jtds.jdbc.Driver"/>
+  <taggedValue xmi:id="_W3BczuvTEeysC_GgI3oOMA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.SQLServerDialect"/>
   <taggedValue xmi:id="_W3Bcz-vTEeysC_GgI3oOMA" tag="REP_PASSWORD_CONTEXT" value="false"/>
   <taggedValue xmi:id="_W3Bc0OvTEeysC_GgI3oOMA" tag="Author" value="fentri@ntt.com"/>
+  <taggedValue xmi:id="_cygjwOvTEeysC_GgI3oOMA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_cygjwevTEeysC_GgI3oOMA" tag="Description" value=""/>
+  <taggedValue xmi:id="_cygjwuvTEeysC_GgI3oOMA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_cyhK0OvTEeysC_GgI3oOMA" tag="OutputFileName" value=""/>
+  <taggedValue xmi:id="_cyhK0evTEeysC_GgI3oOMA" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_cyhK0uvTEeysC_GgI3oOMA" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_cyhK0-vTEeysC_GgI3oOMA" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_cyk1MuvTEeysC_GgI3oOMA" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <presentationParams xmi:id="_cykOIOvTEeysC_GgI3oOMA" type="BOTTOM_MIDDLE_PRESENTATIONKEY">
+    <formula xmi:id="_cykOIevTEeysC_GgI3oOMA">
+      <expression xsi:type="relational:TdExpression" xmi:id="_cyk1MOvTEeysC_GgI3oOMA" body="Creation Date"/>
+    </formula>
+  </presentationParams>
   <analysisMap xmi:id="_W3Bc0evTEeysC_GgI3oOMA" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/TRANSACTIONAL_0.1.ana#_NGK2sOiyEeysLJGdMxs_fw"/>
   </analysisMap>
+  <context xmi:id="_cyk1MevTEeysC_GgI3oOMA" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
