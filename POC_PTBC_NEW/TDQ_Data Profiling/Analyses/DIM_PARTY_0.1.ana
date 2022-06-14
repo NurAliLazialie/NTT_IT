@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_jhEL4OixEeysLJGdMxs_fw" name="DIM_PARTY" creationDate="2022-06-10T18:36:22.371+0700" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_jhEL4OixEeysLJGdMxs_fw" name="DIM_PARTY" supplierDependency="_2UM8sOvQEeysC_GgI3oOMA" creationDate="2022-06-10T18:36:22.371+0700" defaultContext="Default">
     <clientDependency href="../../metadata/connections/SqlServer_0.1.item#_2JHFEOixEeysLJGdMxs_fw"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Yahoo_0.1.pattern#_pVo6kOrKEeysLJGdMxs_fw"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Gmail_from_Google_0.1.pattern#_pV29AOrKEeysLJGdMxs_fw"/>
@@ -411,4 +411,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_2UM8sOvQEeysC_GgI3oOMA" kind="Usage" supplier="_jhEL4OixEeysLJGdMxs_fw">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/DIM_PARTY_0.1.rep#_2ULHgOvQEeysC_GgI3oOMA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
