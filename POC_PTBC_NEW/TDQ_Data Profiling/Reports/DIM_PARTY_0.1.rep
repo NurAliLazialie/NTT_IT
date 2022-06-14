@@ -10,7 +10,7 @@
   <taggedValue xmi:id="_2ULHh-vQEeysC_GgI3oOMA" tag="REP_DBINFO_DBNAME" value="PTBC_POC"/>
   <taggedValue xmi:id="_2ULHiOvQEeysC_GgI3oOMA" tag="REP_DBINFO_SCHEMA" value="dbo"/>
   <taggedValue xmi:id="_2ULHievQEeysC_GgI3oOMA" tag="REP_DBINFO_USER" value="sa"/>
-  <taggedValue xmi:id="_2ULHiuvQEeysC_GgI3oOMA" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:micXYBKF0jndE2w6ADVTJGaZYJpFpAiMsnT3rGhJHx1S2Aou"/>
+  <taggedValue xmi:id="_2ULHiuvQEeysC_GgI3oOMA" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:l92lKbGpnzc04V0v+OUGxJViSEDFwHipM6bkEYhPf6bhvm/N"/>
   <taggedValue xmi:id="_2ULHi-vQEeysC_GgI3oOMA" tag="REP_DBINFO_PARAMETER" value=""/>
   <taggedValue xmi:id="_2ULHjOvQEeysC_GgI3oOMA" tag="REP_DBINFO_URL" value="jdbc:jtds:sqlserver://192.168.0.23:1433/PTBC_POC;"/>
   <taggedValue xmi:id="_2ULHjevQEeysC_GgI3oOMA" tag="REP_DBINFO_DRIVER" value="net.sourceforge.jtds.jdbc.Driver"/>
@@ -25,7 +25,7 @@
   <taggedValue xmi:id="_b539g-vREeysC_GgI3oOMA" tag="OutputType" value="pdf"/>
   <taggedValue xmi:id="_b539hOvREeysC_GgI3oOMA" tag="REP_GENERATE_FILE" value="true"/>
   <taggedValue xmi:id="_b54kkevREeysC_GgI3oOMA" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
-  <analysisMap xmi:id="_2ULHkevQEeysC_GgI3oOMA" mustRefresh="true" reportType="Evolution">
+  <analysisMap xmi:id="_2ULHkevQEeysC_GgI3oOMA" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/DIM_PARTY_0.1.ana#_jhEL4OixEeysLJGdMxs_fw"/>
   </analysisMap>
   <context xmi:id="_b54kkOvREeysC_GgI3oOMA" confirmationNeeded="false" name="Default"/>
