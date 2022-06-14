@@ -24,7 +24,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SQLServer__0.1.item#_kpfXLOiyEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_NGK2t-iyEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_NGK2uOiyEeysLJGdMxs_fw" executionDate="2022-06-14T18:15:34.854+0700" executionDuration="633" message="" executionNumber="10" lastRunOk="true" lastExecutionNumberOk="8"/>
+      <resultMetadata xmi:id="_NGK2uOiyEeysLJGdMxs_fw" executionDate="2022-06-14T18:16:39.077+0700" executionDuration="421" message="" executionNumber="11" lastRunOk="true" lastExecutionNumberOk="9"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_q3l4EeiyEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_q3l4EuiyEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SQLServer__0.1.item#_kpfXEOiyEeysLJGdMxs_fw"/>
@@ -722,6 +722,9 @@
     <parameters xmi:id="_NGK2ueiyEeysLJGdMxs_fw" dataFilter="_q3nGMeiyEeysLJGdMxs_fw" analysisType="Multiple Column Analysis"/>
     <contextType xmi:id="_q3lRAOiyEeysLJGdMxs_fw" confirmationNeeded="false" name="Default"/>
   </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_W3CD0OvTEeysC_GgI3oOMA" kind="Usage" supplier="_NGK2sOiyEeysLJGdMxs_fw">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/TRANSACTIONAL_0.1.rep#_W3BcwOvTEeysC_GgI3oOMA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_q3nGMeiyEeysLJGdMxs_fw" name="TRANSACTIONAL">
     <ranges xmi:id="_q3nGMuiyEeysLJGdMxs_fw">
       <expressions xmi:id="_q3nGM-iyEeysLJGdMxs_fw">
@@ -729,7 +732,4 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_W3CD0OvTEeysC_GgI3oOMA" kind="Usage" supplier="_NGK2sOiyEeysLJGdMxs_fw">
-    <client xsi:type="dataquality.reports:TdReport" href="../Reports/TRANSACTIONAL_0.1.rep#_W3BcwOvTEeysC_GgI3oOMA"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
