@@ -21,7 +21,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-13T14:23:06.716+0700" executionDuration="408" message="" executionNumber="28" lastRunOk="true" lastExecutionNumberOk="24"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-14T10:09:01.751+0700" executionDuration="760" message="" executionNumber="29" lastRunOk="true" lastExecutionNumberOk="25"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -380,7 +380,7 @@
           <sqlGenericExpression xmi:id="_sRHpt-rJEeysLJGdMxs_fw" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_pVctUOrKEeysLJGdMxs_fw" name="Email Yahoo" count="1001" computed="true" matchingValueCount="25" notMatchingValueCount="976">
+      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_pVctUOrKEeysLJGdMxs_fw" name="Email Yahoo" count="1001" computed="true" matchingValueCount="26" notMatchingValueCount="975">
         <parameters xmi:id="_pVctUerKEeysLJGdMxs_fw">
           <dataValidDomain xmi:id="_pVctUurKEeysLJGdMxs_fw">
             <patterns href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Yahoo_0.1.pattern#_jyAMQbo4Ed2fB5cidg4eog"/>
@@ -390,7 +390,7 @@
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/SQL_Pattern_Matching_0.1.definition#_Z4vXcERgEd2RSqFSgXiIfA"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_pfAR8OrKEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN &quot;Mail_Address&quot; LIKE '%@yahoo.%' THEN 1 END), COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_pVctU-rKEeysLJGdMxs_fw" name="Email Gmail from Google" count="1001" computed="true" matchingValueCount="25" notMatchingValueCount="976">
+      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_pVctU-rKEeysLJGdMxs_fw" name="Email Gmail from Google" count="1001" computed="true" matchingValueCount="29" notMatchingValueCount="972">
         <parameters xmi:id="_pVctVOrKEeysLJGdMxs_fw">
           <dataValidDomain xmi:id="_pVctVerKEeysLJGdMxs_fw">
             <patterns href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Gmail_from_Google_0.1.pattern#_5tDp8LoaEd2CVq07lsaT2w"/>
