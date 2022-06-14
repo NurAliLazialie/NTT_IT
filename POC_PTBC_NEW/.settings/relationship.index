@@ -64,5 +64,9 @@
     "id" : "_lr99MOixEeysLJGdMxs_fw - DIM_PARTY_INJECT",
     "version" : "Latest",
     "type" : "schema"
+  }, {
+    "id" : "_lr99MOixEeysLJGdMxs_fw - DTL_TRANSACTION",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 } ]
