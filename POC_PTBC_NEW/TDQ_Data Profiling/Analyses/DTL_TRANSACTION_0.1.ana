@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_XEYYkOutEeysC_GgI3oOMA" name="DTL_TRANSACTION" creationDate="2022-06-14T13:43:54.303+0700">
+  <taggedValue xmi:id="_XEYYkeutEeysC_GgI3oOMA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_XEYYkuutEeysC_GgI3oOMA" tag="Author" value="fentri@ntt.com"/>
+  <taggedValue xmi:id="_XEYYk-utEeysC_GgI3oOMA" tag="Purpose"/>
+  <taggedValue xmi:id="_XEYYlOutEeysC_GgI3oOMA" tag="Description"/>
+  <taggedValue xmi:id="_XEYYleutEeysC_GgI3oOMA" tag="Version" value="0.1"/>
+  <context xmi:id="_XEYYluutEeysC_GgI3oOMA"/>
+  <results xmi:id="_XEYYl-utEeysC_GgI3oOMA">
+    <resultMetadata xmi:id="_XEYYmOutEeysC_GgI3oOMA"/>
+  </results>
+  <parameters xmi:id="_XEYYmeutEeysC_GgI3oOMA" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
