@@ -46,4 +46,27 @@
     "version" : "Latest",
     "type" : "property"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_sKLBYOu_EeysC_GgI3oOMA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_GtlOoOvAEeysC_GgI3oOMA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_lr99MOixEeysLJGdMxs_fw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_GtlOoOvAEeysC_GgI3oOMA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_lr99MOixEeysLJGdMxs_fw - DIM_PARTY_INJECT",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
