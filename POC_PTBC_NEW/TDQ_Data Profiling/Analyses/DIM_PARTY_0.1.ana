@@ -21,7 +21,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-14T10:09:01.751+0700" executionDuration="760" message="" executionNumber="29" lastRunOk="true" lastExecutionNumberOk="25"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-14T18:09:16.221+0700" executionDuration="345" message="" executionNumber="30" lastRunOk="true" lastExecutionNumberOk="26"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -404,6 +404,9 @@
     <parameters xmi:id="_jhEL6eixEeysLJGdMxs_fw" dataFilter="_2JPA4OixEeysLJGdMxs_fw" analysisType="Multiple Column Analysis"/>
     <contextType xmi:id="_2JCMkOixEeysLJGdMxs_fw" confirmationNeeded="false" name="Default"/>
   </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_2UM8sOvQEeysC_GgI3oOMA" kind="Usage" supplier="_jhEL4OixEeysLJGdMxs_fw">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/DIM_PARTY_0.1.rep#_2ULHgOvQEeysC_GgI3oOMA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_2JPA4OixEeysLJGdMxs_fw" name="DIM_PARTY">
     <ranges xmi:id="_2JPn8OixEeysLJGdMxs_fw">
       <expressions xmi:id="_2JQPAOixEeysLJGdMxs_fw">
@@ -411,7 +414,4 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_2UM8sOvQEeysC_GgI3oOMA" kind="Usage" supplier="_jhEL4OixEeysLJGdMxs_fw">
-    <client xsi:type="dataquality.reports:TdReport" href="../Reports/DIM_PARTY_0.1.rep#_2ULHgOvQEeysC_GgI3oOMA"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
