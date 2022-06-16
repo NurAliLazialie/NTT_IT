@@ -12,5 +12,6 @@
   </dataquality.domain.pattern:Pattern>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_pV29AOrKEeysLJGdMxs_fw" kind="Usage" supplier="_5tDp8LoaEd2CVq07lsaT2w">
     <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/DIM_PARTY_0.1.ana#_jhEL4OixEeysLJGdMxs_fw"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/DIM_PARTY_PTBC_0.1.ana#_pc35EO09EeysC_GgI3oOMA"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>

@@ -1,13 +1,341 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_pc35EO09EeysC_GgI3oOMA" name="DIM_PARTY_PTBC" creationDate="2022-06-16T13:29:16.408+0700">
-  <taggedValue xmi:id="_pc35Ee09EeysC_GgI3oOMA" tag="Status" value="development"/>
-  <taggedValue xmi:id="_pc35Eu09EeysC_GgI3oOMA" tag="Author" value="fentri@ntt.com"/>
-  <taggedValue xmi:id="_pc35E-09EeysC_GgI3oOMA" tag="Purpose"/>
-  <taggedValue xmi:id="_pc35FO09EeysC_GgI3oOMA" tag="Description"/>
-  <taggedValue xmi:id="_pc35Fe09EeysC_GgI3oOMA" tag="Version" value="0.1"/>
-  <context xmi:id="_pc35Fu09EeysC_GgI3oOMA"/>
-  <results xmi:id="_pc35F-09EeysC_GgI3oOMA">
-    <resultMetadata xmi:id="_pc35GO09EeysC_GgI3oOMA"/>
-  </results>
-  <parameters xmi:id="_pc35Ge09EeysC_GgI3oOMA" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_pc35EO09EeysC_GgI3oOMA" name="DIM_PARTY_PTBC" creationDate="2022-06-16T13:29:16.408+0700" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/SqlServer_0.1.item#_2JHFEOixEeysLJGdMxs_fw"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Gmail_from_Google_0.1.pattern#_pV29AOrKEeysLJGdMxs_fw"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Yahoo_0.1.pattern#_pVo6kOrKEeysLJGdMxs_fw"/>
+    <taggedValue xmi:id="_pc35Ee09EeysC_GgI3oOMA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_pc35Eu09EeysC_GgI3oOMA" tag="Author" value="fentri@ntt.com"/>
+    <taggedValue xmi:id="_pc35E-09EeysC_GgI3oOMA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_pc35FO09EeysC_GgI3oOMA" tag="Description" value=""/>
+    <taggedValue xmi:id="_pc35Fe09EeysC_GgI3oOMA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_OupGce0-EeysC_GgI3oOMA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_OupGcu0-EeysC_GgI3oOMA" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_OupGc-0-EeysC_GgI3oOMA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_Ouq7oO0-EeysC_GgI3oOMA" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_pc35Fu09EeysC_GgI3oOMA">
+      <connection href="../../metadata/connections/SqlServer_0.1.item#_sHE_cOixEeysLJGdMxs_fw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljl-ixEeysLJGdMxs_fw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
+    </context>
+    <results xmi:id="_pc35F-09EeysC_GgI3oOMA">
+      <resultMetadata xmi:id="_pc35GO09EeysC_GgI3oOMA" executionDate="2022-06-16T13:33:28.768+0700" executionDuration="361" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_OuptgO0-EeysC_GgI3oOMA" count="1001" computed="true">
+        <parameters xmi:id="_OuqUkO0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DEO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7G1IO0-EeysC_GgI3oOMA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_O7G1Ie0-EeysC_GgI3oOMA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_O7G1Iu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_O7G1I-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_OuqUke0-EeysC_GgI3oOMA" count="1001" nullCount="2" computed="true">
+        <parameters xmi:id="_OuqUku0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DFO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;CIF&quot; IS NULL " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7KfgO0-EeysC_GgI3oOMA" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_O7Kfge0-EeysC_GgI3oOMA" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_O7Kfgu0-EeysC_GgI3oOMA" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_O7Kfg-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_OuqUk-0-EeysC_GgI3oOMA" count="1001" nullCount="2" computed="true" distinctValueCount="998">
+        <parameters xmi:id="_OuqUlO0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DFe0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;CIF&quot; FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; ) A" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7M7wO0-EeysC_GgI3oOMA" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_O7M7we0-EeysC_GgI3oOMA" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_O7M7wu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_O7M7w-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_OuqUle0-EeysC_GgI3oOMA" count="1001" nullCount="2" computed="true" uniqueValueCount="995">
+        <parameters xmi:id="_OuqUlu0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DFu0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &quot;CIF&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  GROUP BY &quot;CIF&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7PYAO0-EeysC_GgI3oOMA" name="Unique Count" label="Unique Count">
+          <taggedValue xmi:id="_O7PYAe0-EeysC_GgI3oOMA" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
+          <taggedValue xmi:id="_O7PYAu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of unique records"/>
+          <sqlGenericExpression xmi:id="_O7PYA-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_O7PYBO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_O7PYBe0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_O7PYBu0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_O7PYB-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_O7PYCO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_O7PYCe0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_OuqUl-0-EeysC_GgI3oOMA" count="1001" nullCount="2" computed="true" duplicateValueCount="3">
+        <parameters xmi:id="_OuqUmO0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DF-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &quot;CIF&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  GROUP BY &quot;CIF&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7R0QO0-EeysC_GgI3oOMA" name="Duplicate Count" label="Duplicate Count">
+          <taggedValue xmi:id="_O7R0Qe0-EeysC_GgI3oOMA" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
+          <taggedValue xmi:id="_O7R0Qu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of duplicated records"/>
+          <sqlGenericExpression xmi:id="_O7R0Q-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_O7R0RO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_O7R0Re0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_O7R0Ru0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_O7R0R-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_O7R0SO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_O7R0Se0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_OuqUme0-EeysC_GgI3oOMA" count="1001" nullCount="2" computed="true">
+        <parameters xmi:id="_OuqUmu0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DGO0-EeysC_GgI3oOMA" body="SELECT COUNT(&quot;CIF&quot;) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE LTRIM(RTRIM(&quot;CIF&quot;)) = '' " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7TpcO0-EeysC_GgI3oOMA" name="Blank Count" label="Blank Count">
+          <taggedValue xmi:id="_O7Tpce0-EeysC_GgI3oOMA" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
+          <taggedValue xmi:id="_O7Tpcu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of blank records"/>
+          <sqlGenericExpression xmi:id="_O7Tpc-0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_O7TpdO0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_O7Tpde0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_O7Tpdu0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_O7Tpd-0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_OuqUm-0-EeysC_GgI3oOMA" nullCount="2" computed="true" length="6">
+        <parameters xmi:id="_OuqUnO0-EeysC_GgI3oOMA">
+          <indicatorValidDomain xmi:id="_OuqUne0-EeysC_GgI3oOMA" name="Indicator threshold">
+            <ranges xmi:id="_OuqUnu0-EeysC_GgI3oOMA" name="Value Threshold">
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_OuqUn-0-EeysC_GgI3oOMA" value="6"/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_OuqUoO0-EeysC_GgI3oOMA" value=""/>
+            </ranges>
+          </indicatorValidDomain>
+          <textParameter xmi:id="_OuqUoe0-EeysC_GgI3oOMA" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DGe0-EeysC_GgI3oOMA" body="SELECT MIN(LEN(&quot;CIF&quot;)) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE (&quot;CIF&quot; IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &quot;CIF&quot; IS NULL  THEN 'NULL TALEND' ELSE &quot;CIF&quot; END)) &lt;> '' ) " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7WFsO0-EeysC_GgI3oOMA" name="Minimal Length" label="Minimal Length">
+          <taggedValue xmi:id="_O7WFse0-EeysC_GgI3oOMA" tag="Description" value="computes the minimal length of a text field. Does not take into account the null and blank values when computing the minimal length."/>
+          <taggedValue xmi:id="_O7WFsu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the length of the smallest textual record of non-null and non-blank values"/>
+          <sqlGenericExpression xmi:id="_O7WFs-0-EeysC_GgI3oOMA" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_O7WFtO0-EeysC_GgI3oOMA" body="SELECT MIN( LENGTH(&lt;%=__COLUMN_NAMES__%>) ) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(NVL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) IS NOT NULL) &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_O7WFte0-EeysC_GgI3oOMA" body="SELECT MIN(LEN(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END)) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_O7WFtu0-EeysC_GgI3oOMA" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_O7WFt-0-EeysC_GgI3oOMA" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQLite"/>
+          <sqlGenericExpression xmi:id="_O7WFuO0-EeysC_GgI3oOMA" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Hive"/>
+          <sqlGenericExpression xmi:id="_O7WFue0-EeysC_GgI3oOMA" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_O7WFuu0-EeysC_GgI3oOMA" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( LTRIM(RTRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END ))  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_O7WFu-0-EeysC_GgI3oOMA" body="SELECT MIN(CHAR_LENGTH( &lt;%=__COLUMN_NAMES__%> )) FROM  &lt;%=__TABLE_NAME__%>   WHERE ( &lt;%=__COLUMN_NAMES__%>  IS NOT NULL ) AND ( TRIM( CASE WHEN  &lt;%=__COLUMN_NAMES__%>  IS NULL  THEN 'NULL TALEND' ELSE  &lt;%=__COLUMN_NAMES__%>  END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Informix"/>
+          <sqlGenericExpression xmi:id="_O7WFvO0-EeysC_GgI3oOMA" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (1=1) AND (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_O7WFve0-EeysC_GgI3oOMA" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
+          <sqlGenericExpression xmi:id="_O7WFvu0-EeysC_GgI3oOMA" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Snowflake"/>
+          <sqlGenericExpression xmi:id="_O7WFv-0-EeysC_GgI3oOMA" body="SELECT MIN(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="HDB"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_OuqUou0-EeysC_GgI3oOMA" nullCount="2" computed="true" length="8">
+        <parameters xmi:id="_OuqUo-0-EeysC_GgI3oOMA">
+          <indicatorValidDomain xmi:id="_OuqUpO0-EeysC_GgI3oOMA" name="Indicator threshold">
+            <ranges xmi:id="_OuqUpe0-EeysC_GgI3oOMA" name="Value Threshold">
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_OuqUpu0-EeysC_GgI3oOMA" value=""/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_OuqUp-0-EeysC_GgI3oOMA" value="8"/>
+            </ranges>
+          </indicatorValidDomain>
+          <textParameter xmi:id="_OuqUqO0-EeysC_GgI3oOMA" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DGu0-EeysC_GgI3oOMA" body="SELECT MAX(LEN(&quot;CIF&quot;)) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE (&quot;CIF&quot; IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &quot;CIF&quot; IS NULL  THEN 'NULL TALEND' ELSE &quot;CIF&quot; END)) &lt;> '' ) " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7Yh8O0-EeysC_GgI3oOMA" name="Maximal Length" label="Maximal Length">
+          <taggedValue xmi:id="_O7Yh8e0-EeysC_GgI3oOMA" tag="Description" value="computes the maximal length of a text field. Does not take into account the null and blank values when computing the maximal length."/>
+          <taggedValue xmi:id="_O7Yh8u0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the length of the longest textual record of non-null and non-blank values"/>
+          <sqlGenericExpression xmi:id="_O7Yh8-0-EeysC_GgI3oOMA" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_O7Yh9O0-EeysC_GgI3oOMA" body="SELECT MAX( LENGTH(&lt;%=__COLUMN_NAMES__%>) ) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(NVL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) IS NOT NULL) &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle" modificationDate=""/>
+          <sqlGenericExpression xmi:id="_O7Yh9e0-EeysC_GgI3oOMA" body="SELECT MAX(LEN(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (LTRIM(RTRIM(CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END)) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_O7Yh9u0-EeysC_GgI3oOMA" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_O7Yh9-0-EeysC_GgI3oOMA" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQLite"/>
+          <sqlGenericExpression xmi:id="_O7Yh-O0-EeysC_GgI3oOMA" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Hive" modificationDate=""/>
+          <sqlGenericExpression xmi:id="_O7Yh-e0-EeysC_GgI3oOMA" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_O7Yh-u0-EeysC_GgI3oOMA" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( LTRIM(RTRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END ))  &lt;>  '' )  &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_O7Yh--0-EeysC_GgI3oOMA" body="SELECT MAX(CHAR_LENGTH( &lt;%=__COLUMN_NAMES__%> )) FROM  &lt;%=__TABLE_NAME__%>   WHERE ( &lt;%=__COLUMN_NAMES__%>  IS NOT NULL ) AND ( TRIM( CASE WHEN  &lt;%=__COLUMN_NAMES__%>  IS NULL  THEN 'NULL TALEND' ELSE  &lt;%=__COLUMN_NAMES__%>  END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Informix"/>
+          <sqlGenericExpression xmi:id="_O7Yh_O0-EeysC_GgI3oOMA" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND ( TRIM( CASE WHEN &lt;%=__COLUMN_NAMES__%> IS NULL  THEN 'NULL TALEND' ELSE &lt;%=__COLUMN_NAMES__%> END )  &lt;>  '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_O7Yh_e0-EeysC_GgI3oOMA" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
+          <sqlGenericExpression xmi:id="_O7Yh_u0-EeysC_GgI3oOMA" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Snowflake"/>
+          <sqlGenericExpression xmi:id="_O7Yh_-0-EeysC_GgI3oOMA" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(IFNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="HDB"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_OuqUqe0-EeysC_GgI3oOMA" count="1001" computed="true">
+        <parameters xmi:id="_OuqUqu0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DEu0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7a-MO0-EeysC_GgI3oOMA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_O7a-Me0-EeysC_GgI3oOMA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_O7a-Mu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_O7a-M-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_OuqUq-0-EeysC_GgI3oOMA" count="1001" computed="true">
+        <parameters xmi:id="_OuqUrO0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DG-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;CIF_NAME&quot; IS NULL " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7dacO0-EeysC_GgI3oOMA" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_O7dace0-EeysC_GgI3oOMA" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_O7dacu0-EeysC_GgI3oOMA" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_O7dac-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_OuqUre0-EeysC_GgI3oOMA" count="1001" computed="true" distinctValueCount="995">
+        <parameters xmi:id="_OuqUru0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DHO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;CIF_NAME&quot; FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; ) A" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7f2sO0-EeysC_GgI3oOMA" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_O7f2se0-EeysC_GgI3oOMA" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_O7f2su0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_O7f2s-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_OuqUr-0-EeysC_GgI3oOMA" count="1001" computed="true" uniqueValueCount="989">
+        <parameters xmi:id="_OuqUsO0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DHe0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &quot;CIF_NAME&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  GROUP BY &quot;CIF_NAME&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7iS8O0-EeysC_GgI3oOMA" name="Unique Count" label="Unique Count">
+          <taggedValue xmi:id="_O7iS8e0-EeysC_GgI3oOMA" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
+          <taggedValue xmi:id="_O7iS8u0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of unique records"/>
+          <sqlGenericExpression xmi:id="_O7iS8-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_O7iS9O0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_O7iS9e0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_O7iS9u0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_O7iS9-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_O7iS-O0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_O7iS-e0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_OuqUse0-EeysC_GgI3oOMA" count="1001" computed="true" duplicateValueCount="6">
+        <parameters xmi:id="_OuqUsu0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DHu0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &quot;CIF_NAME&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  GROUP BY &quot;CIF_NAME&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7kvMO0-EeysC_GgI3oOMA" name="Duplicate Count" label="Duplicate Count">
+          <taggedValue xmi:id="_O7kvMe0-EeysC_GgI3oOMA" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
+          <taggedValue xmi:id="_O7kvMu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of duplicated records"/>
+          <sqlGenericExpression xmi:id="_O7kvM-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_O7kvNO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_O7kvNe0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_O7kvNu0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_O7kvN-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_O7kvOO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_O7kvOe0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_OuqUs-0-EeysC_GgI3oOMA" count="1001" computed="true" blankCount="1">
+        <parameters xmi:id="_OuqUtO0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DH-0-EeysC_GgI3oOMA" body="SELECT COUNT(&quot;CIF_NAME&quot;) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE LTRIM(RTRIM(&quot;CIF_NAME&quot;)) = '' " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7nygO0-EeysC_GgI3oOMA" name="Blank Count" label="Blank Count">
+          <taggedValue xmi:id="_O7nyge0-EeysC_GgI3oOMA" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
+          <taggedValue xmi:id="_O7nygu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of blank records"/>
+          <sqlGenericExpression xmi:id="_O7nyg-0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_O7nyhO0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_O7nyhe0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_O7nyhu0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_O7nyh-0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_OuqUte0-EeysC_GgI3oOMA" count="1001" computed="true">
+        <parameters xmi:id="_OuqUtu0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljl-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DEe0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7qOwO0-EeysC_GgI3oOMA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_O7qOwe0-EeysC_GgI3oOMA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_O7qOwu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_O7qOw-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_OuqUt-0-EeysC_GgI3oOMA" count="1001" nullCount="1" computed="true">
+        <parameters xmi:id="_OuqUuO0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljl-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DIO0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;BIRTH_DT&quot; IS NULL " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7tSEO0-EeysC_GgI3oOMA" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_O7tSEe0-EeysC_GgI3oOMA" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_O7tSEu0-EeysC_GgI3oOMA" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_O7tSE-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_OuqUue0-EeysC_GgI3oOMA" count="1001" computed="true">
+        <parameters xmi:id="_OuqUuu0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DE-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7vuUO0-EeysC_GgI3oOMA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_O7vuUe0-EeysC_GgI3oOMA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_O7vuUu0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_O7vuU-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_OuqUu-0-EeysC_GgI3oOMA" count="1001" computed="true">
+        <parameters xmi:id="_OuqUvO0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DIe0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; WHERE &quot;Mail_Address&quot; IS NULL " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O7yKkO0-EeysC_GgI3oOMA" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_O7yKke0-EeysC_GgI3oOMA" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_O7yKku0-EeysC_GgI3oOMA" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_O7yKk-0-EeysC_GgI3oOMA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_OuqUve0-EeysC_GgI3oOMA" count="1001" computed="true" blankCount="99">
+        <parameters xmi:id="_OuqUvu0-EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DIu0-EeysC_GgI3oOMA" body="SELECT COUNT(&quot;Mail_Address&quot;) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  WHERE LTRIM(RTRIM(&quot;Mail_Address&quot;)) = '' " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_O70m0O0-EeysC_GgI3oOMA" name="Blank Count" label="Blank Count">
+          <taggedValue xmi:id="_O70m0e0-EeysC_GgI3oOMA" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
+          <taggedValue xmi:id="_O70m0u0-EeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of blank records"/>
+          <sqlGenericExpression xmi:id="_O70m0-0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_O70m1O0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_O70m1e0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_O70m1u0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_O70m1-0-EeysC_GgI3oOMA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_OuqUv-0-EeysC_GgI3oOMA" name="Email Gmail from Google" count="1001" computed="true" matchingValueCount="28" notMatchingValueCount="973">
+        <parameters xmi:id="_OuqUwO0-EeysC_GgI3oOMA">
+          <dataValidDomain xmi:id="_OuqUwe0-EeysC_GgI3oOMA">
+            <patterns href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Gmail_from_Google_0.1.pattern#_5tDp8LoaEd2CVq07lsaT2w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/SQL_Pattern_Matching_0.1.definition#_Z4vXcERgEd2RSqFSgXiIfA"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DI-0-EeysC_GgI3oOMA" body="SELECT COUNT(CASE WHEN &quot;Mail_Address&quot; LIKE '%@gmail.com' THEN 1 END), COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_OuqUwu0-EeysC_GgI3oOMA" name="Email Yahoo" count="1001" computed="true" matchingValueCount="26" notMatchingValueCount="975">
+        <parameters xmi:id="_OuqUw-0-EeysC_GgI3oOMA">
+          <dataValidDomain xmi:id="_OuqUxO0-EeysC_GgI3oOMA">
+            <patterns href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Yahoo_0.1.pattern#_jyAMQbo4Ed2fB5cidg4eog"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/SQL_Pattern_Matching_0.1.definition#_Z4vXcERgEd2RSqFSgXiIfA"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_O73DJO0-EeysC_GgI3oOMA" body="SELECT COUNT(CASE WHEN &quot;Mail_Address&quot; LIKE '%@yahoo.%' THEN 1 END), COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_pc35Ge09EeysC_GgI3oOMA" dataFilter="_OvDWIO0-EeysC_GgI3oOMA" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_OupGcO0-EeysC_GgI3oOMA" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_OvDWIO0-EeysC_GgI3oOMA" name="DIM_PARTY_PTBC">
+    <ranges xmi:id="_OvDWIe0-EeysC_GgI3oOMA">
+      <expressions xmi:id="_OvDWIu0-EeysC_GgI3oOMA">
+        <expression xsi:type="relational:TdExpression" xmi:id="_OvDWI-0-EeysC_GgI3oOMA" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
