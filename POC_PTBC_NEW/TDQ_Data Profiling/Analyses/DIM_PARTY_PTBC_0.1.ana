@@ -21,7 +21,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_pc35F-09EeysC_GgI3oOMA">
-      <resultMetadata xmi:id="_pc35GO09EeysC_GgI3oOMA" executionDate="2022-06-16T13:36:29.702+0700" executionDuration="323" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2" outThreshold="true"/>
+      <resultMetadata xmi:id="_pc35GO09EeysC_GgI3oOMA" executionDate="2022-06-16T13:37:07.620+0700" executionDuration="429" message="" executionNumber="3" lastRunOk="true" lastExecutionNumberOk="3" outThreshold="true"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_OuptgO0-EeysC_GgI3oOMA" count="1001" computed="true">
         <parameters xmi:id="_OuqUkO0-EeysC_GgI3oOMA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -108,8 +108,8 @@
         <parameters xmi:id="_OuqUnO0-EeysC_GgI3oOMA">
           <indicatorValidDomain xmi:id="_OuqUne0-EeysC_GgI3oOMA" name="Indicator threshold">
             <ranges xmi:id="_OuqUnu0-EeysC_GgI3oOMA" name="Value Threshold">
-              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_otAF4O0-EeysC_GgI3oOMA" value="3"/>
-              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_otAF4e0-EeysC_GgI3oOMA" value=""/>
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_vKHTQO0-EeysC_GgI3oOMA" value="3"/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_vKHTQe0-EeysC_GgI3oOMA" value="3"/>
             </ranges>
           </indicatorValidDomain>
           <textParameter xmi:id="_OuqUoe0-EeysC_GgI3oOMA" useBlank="false"/>
@@ -139,8 +139,8 @@
         <parameters xmi:id="_OuqUo-0-EeysC_GgI3oOMA">
           <indicatorValidDomain xmi:id="_OuqUpO0-EeysC_GgI3oOMA" name="Indicator threshold">
             <ranges xmi:id="_OuqUpe0-EeysC_GgI3oOMA" name="Value Threshold">
-              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_pZRWAO0-EeysC_GgI3oOMA" value=""/>
-              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_pZRWAe0-EeysC_GgI3oOMA" value="6"/>
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_u0-wwO0-EeysC_GgI3oOMA" value="3"/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_u0-wwe0-EeysC_GgI3oOMA" value="6"/>
             </ranges>
           </indicatorValidDomain>
           <textParameter xmi:id="_OuqUqO0-EeysC_GgI3oOMA" useBlank="false"/>
