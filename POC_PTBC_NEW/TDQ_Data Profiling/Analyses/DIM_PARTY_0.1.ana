@@ -406,6 +406,7 @@
   </dataquality.analysis:Analysis>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_2UM8sOvQEeysC_GgI3oOMA" kind="Usage" supplier="_jhEL4OixEeysLJGdMxs_fw">
     <client xsi:type="dataquality.reports:TdReport" href="../Reports/DIM_PARTY_0.1.rep#_2ULHgOvQEeysC_GgI3oOMA"/>
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/DIM_PARTY_1_0.1.rep#_IDClYO0jEeysC_GgI3oOMA"/>
   </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_2JPA4OixEeysLJGdMxs_fw" name="DIM_PARTY">
     <ranges xmi:id="_2JPn8OixEeysLJGdMxs_fw">

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_IDClYO0jEeysC_GgI3oOMA" name="DIM_PARTY_1" creationDate="2022-06-16T10:19:25.337+0700">
+  <clientDependency href="../Analyses/DIM_PARTY_0.1.ana#_2UM8sOvQEeysC_GgI3oOMA"/>
+  <taggedValue xmi:id="_IDClYe0jEeysC_GgI3oOMA" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_IDClYu0jEeysC_GgI3oOMA" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_IDClY-0jEeysC_GgI3oOMA" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_IDClZO0jEeysC_GgI3oOMA" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_IDClZe0jEeysC_GgI3oOMA" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_IDClZu0jEeysC_GgI3oOMA" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_IDClZ-0jEeysC_GgI3oOMA" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_IDClaO0jEeysC_GgI3oOMA" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_IDClae0jEeysC_GgI3oOMA" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_IDClau0jEeysC_GgI3oOMA" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:a6fcbYm3RLb44dMus88RaEqM/X2yIb4+wFpTbg=="/>
+  <taggedValue xmi:id="_IDCla-0jEeysC_GgI3oOMA" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_IDClbO0jEeysC_GgI3oOMA" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\Talend_8.0.1\Administrator\workspace_fentri\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_IDClbe0jEeysC_GgI3oOMA" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_IDClbu0jEeysC_GgI3oOMA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_IDClb-0jEeysC_GgI3oOMA" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_IDClcO0jEeysC_GgI3oOMA" tag="Author" value="fentri@ntt.com"/>
+  <analysisMap xmi:id="_IDClce0jEeysC_GgI3oOMA" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/DIM_PARTY_0.1.ana#_jhEL4OixEeysLJGdMxs_fw"/>
+  </analysisMap>
+</dataquality.reports:TdReport>
