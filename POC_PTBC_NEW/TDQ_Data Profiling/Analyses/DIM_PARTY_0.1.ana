@@ -21,7 +21,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-14T18:13:31.821+0700" executionDuration="467" message="" executionNumber="32" lastRunOk="true" lastExecutionNumberOk="28"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-16T10:24:12.025+0700" executionDuration="313" message="" executionNumber="33" lastRunOk="true" lastExecutionNumberOk="29"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -193,7 +193,7 @@
           <sqlGenericExpression xmi:id="_4CH1I-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JHsI-ixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_2JHsI-ixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JHsJOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -204,7 +204,7 @@
           <sqlGenericExpression xmi:id="_4CJqU-ixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JHsJeixEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" duplicateValueCount="6">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JHsJeixEeysLJGdMxs_fw" count="1001" computed="true" duplicateValueCount="6">
         <parameters xmi:id="_2JHsJuixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
@@ -221,7 +221,7 @@
           <sqlGenericExpression xmi:id="_4CMGmeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmkurEEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" uniqueValueCount="989">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmkurEEeysLJGdMxs_fw" count="1001" computed="true" uniqueValueCount="989">
         <parameters xmi:id="_xUFmk-rEEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
@@ -238,7 +238,7 @@
           <sqlGenericExpression xmi:id="_xcnQeerEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_sIkxuurJEeysLJGdMxs_fw" count="1001" nullCount="1" computed="true" blankCount="1">
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_sIkxuurJEeysLJGdMxs_fw" count="1001" computed="true" blankCount="1">
         <parameters xmi:id="_sIkxu-rJEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljk-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
@@ -348,7 +348,7 @@
           <sqlGenericExpression xmi:id="_4CclSeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmlurEEeysLJGdMxs_fw" count="1001" computed="true" uniqueValueCount="901">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_xUFmlurEEeysLJGdMxs_fw" count="1001" computed="true" uniqueValueCount="900">
         <parameters xmi:id="_xUFml-rEEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
@@ -365,7 +365,7 @@
           <sqlGenericExpression xmi:id="_xculOerEEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_sIkxvOrJEeysLJGdMxs_fw" count="1001" computed="true" blankCount="98">
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_sIkxvOrJEeysLJGdMxs_fw" count="1001" computed="true" blankCount="99">
         <parameters xmi:id="_sIkxverJEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
@@ -390,7 +390,7 @@
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/SQL_Pattern_Matching_0.1.definition#_Z4vXcERgEd2RSqFSgXiIfA"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_pfAR8OrKEeysLJGdMxs_fw" body="SELECT COUNT(CASE WHEN &quot;Mail_Address&quot; LIKE '%@yahoo.%' THEN 1 END), COUNT(*) FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot; " language="Microsoft SQL Server"/>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_pVctU-rKEeysLJGdMxs_fw" name="Email Gmail from Google" count="1001" computed="true" matchingValueCount="29" notMatchingValueCount="972">
+      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_pVctU-rKEeysLJGdMxs_fw" name="Email Gmail from Google" count="1001" computed="true" matchingValueCount="28" notMatchingValueCount="973">
         <parameters xmi:id="_pVctVOrKEeysLJGdMxs_fw">
           <dataValidDomain xmi:id="_pVctVerKEeysLJGdMxs_fw">
             <patterns href="../../TDQ_Libraries/Patterns/SQL/internet/Email_Gmail_from_Google_0.1.pattern#_5tDp8LoaEd2CVq07lsaT2w"/>
