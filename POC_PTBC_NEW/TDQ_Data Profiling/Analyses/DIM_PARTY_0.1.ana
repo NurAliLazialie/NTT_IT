@@ -21,7 +21,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urljm-ixEeysLJGdMxs_fw"/>
     </context>
     <results xmi:id="_jhEL5-ixEeysLJGdMxs_fw">
-      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-16T10:24:12.025+0700" executionDuration="313" message="" executionNumber="33" lastRunOk="true" lastExecutionNumberOk="29"/>
+      <resultMetadata xmi:id="_jhEL6OixEeysLJGdMxs_fw" executionDate="2022-06-16T16:03:19.152+0700" executionDuration="445" message="" executionNumber="34" lastRunOk="true" lastExecutionNumberOk="30" outThreshold="true"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_2JDasOixEeysLJGdMxs_fw" count="1001" computed="true">
         <parameters xmi:id="_2JEBwOixEeysLJGdMxs_fw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
@@ -45,7 +45,15 @@
         </builtInIndicatorDefinition>
       </indicators>
       <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_2JEBw-ixEeysLJGdMxs_fw" count="1001" nullCount="2" computed="true" duplicateValueCount="3">
-        <parameters xmi:id="_2JEBxOixEeysLJGdMxs_fw"/>
+        <parameters xmi:id="_2JEBxOixEeysLJGdMxs_fw">
+          <indicatorValidDomain xmi:id="_KJCAse1TEeysC_GgI3oOMA" name="Indicator threshold">
+            <ranges xmi:id="_KJCnwO1TEeysC_GgI3oOMA" name="Value Threshold">
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_KJCnwe1TEeysC_GgI3oOMA" value="4"/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_KJCnwu1TEeysC_GgI3oOMA" value="10"/>
+            </ranges>
+          </indicatorValidDomain>
+          <textParameter xmi:id="_KJCAsO1TEeysC_GgI3oOMA"/>
+        </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_urk8gOixEeysLJGdMxs_fw"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_4Cm9VeixEeysLJGdMxs_fw" body="SELECT COUNT(*) FROM (SELECT &quot;CIF&quot;, COUNT(*) mycount FROM &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DIM_PARTY&quot;  m  GROUP BY &quot;CIF&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
