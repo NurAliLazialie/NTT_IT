@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_pc35EO09EeysC_GgI3oOMA" name="DIM_PARTY_PTBC" creationDate="2022-06-16T13:29:16.408+0700">
+  <taggedValue xmi:id="_pc35Ee09EeysC_GgI3oOMA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_pc35Eu09EeysC_GgI3oOMA" tag="Author" value="fentri@ntt.com"/>
+  <taggedValue xmi:id="_pc35E-09EeysC_GgI3oOMA" tag="Purpose"/>
+  <taggedValue xmi:id="_pc35FO09EeysC_GgI3oOMA" tag="Description"/>
+  <taggedValue xmi:id="_pc35Fe09EeysC_GgI3oOMA" tag="Version" value="0.1"/>
+  <context xmi:id="_pc35Fu09EeysC_GgI3oOMA"/>
+  <results xmi:id="_pc35F-09EeysC_GgI3oOMA">
+    <resultMetadata xmi:id="_pc35GO09EeysC_GgI3oOMA"/>
+  </results>
+  <parameters xmi:id="_pc35Ge09EeysC_GgI3oOMA" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
