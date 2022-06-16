@@ -20,7 +20,15 @@
     "version" : "Latest",
     "type" : "property"
   }, {
+    "id" : "_lr99MOixEeysLJGdMxs_fw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "_-LzscO0gEeysC_GgI3oOMA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_lr99MOixEeysLJGdMxs_fw - DIM_PARTY",
     "version" : "Latest",
     "type" : "schema"
   } ]
