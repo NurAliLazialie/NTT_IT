@@ -28,5 +28,6 @@
   <analysisMap xmi:id="_IDClce0jEeysC_GgI3oOMA" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/DIM_PARTY_0.1.ana#_jhEL4OixEeysLJGdMxs_fw"/>
   </analysisMap>
+  <ExecInformations xmi:id="_ysgQMO0jEeysC_GgI3oOMA" executionDate="2022-06-16T10:24:12.024+0700" executionDuration="315" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
   <context xmi:id="_x1iL8O0jEeysC_GgI3oOMA" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
