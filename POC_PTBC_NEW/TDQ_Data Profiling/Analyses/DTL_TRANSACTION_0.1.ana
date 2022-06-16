@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.indicators.definition.userdefine="http://dataquality.indicators.definition.userdefine" xmlns:dataquality.indicators.sql="http://dataquality.indicators.sql" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_XEYYkOutEeysC_GgI3oOMA" name="DTL_TRANSACTION" creationDate="2022-06-14T13:43:54.303+0700" defaultContext="Default">
     <clientDependency href="../../metadata/connections/SqlServer_0.1.item#_2JHFEOixEeysLJGdMxs_fw"/>
+    <clientDependency href="../../TDQ_Libraries/Indicators/User Defined Indicators/Check_Values__0_0.1.definition#_iyObcOrLEeysLJGdMxs_fw"/>
     <taggedValue xmi:id="_XEYYkeutEeysC_GgI3oOMA" tag="Status" value="development"/>
     <taggedValue xmi:id="_XEYYkuutEeysC_GgI3oOMA" tag="Author" value="fentri@ntt.com"/>
     <taggedValue xmi:id="_XEYYk-utEeysC_GgI3oOMA" tag="Purpose" value=""/>
@@ -23,7 +24,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_ojdxzuvFEeysC_GgI3oOMA"/>
     </context>
     <results xmi:id="_XEYYl-utEeysC_GgI3oOMA">
-      <resultMetadata xmi:id="_XEYYmOutEeysC_GgI3oOMA" executionDate="2022-06-14T16:38:27.452+0700" executionDuration="554" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <resultMetadata xmi:id="_XEYYmOutEeysC_GgI3oOMA" executionDate="2022-06-16T13:39:28.058+0700" executionDuration="725" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_vXEzgOvFEeysC_GgI3oOMA" count="100000" computed="true">
         <parameters xmi:id="_vXEzgevFEeysC_GgI3oOMA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_ojdxsuvFEeysC_GgI3oOMA"/>
@@ -348,6 +349,25 @@
           <taggedValue xmi:id="_vjmMkevFEeysC_GgI3oOMA" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_vjmMkuvFEeysC_GgI3oOMA" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_vjmMk-vFEeysC_GgI3oOMA" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators.sql:UserDefIndicator" xmi:id="_ESwg8O0_EeysC_GgI3oOMA" name="Check_Values_&lt;0" count="100000" computed="true" matchingValueCount="3120" notMatchingValueCount="96880">
+        <parameters xmi:id="_ESwg8e0_EeysC_GgI3oOMA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/SqlServer_0.1.item#_ojdxxuvFEeysC_GgI3oOMA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/User Defined Indicators/Check_Values__0_0.1.definition#_OUFjUOrLEeysLJGdMxs_fw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_EeUQsO0_EeysC_GgI3oOMA" body="SELECT COUNT(CASE WHEN TRX_BASE_AMT &lt; 500 THEN 1 END), COUNT(*) FROM  &quot;PTBC_POC&quot;.&quot;dbo&quot;.&quot;DTL_TRANSACTION_INJECT&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xsi:type="dataquality.indicators.definition.userdefine:UDIndicatorDefinition" xmi:id="_EeQmUO0_EeysC_GgI3oOMA" name="Check_Values_&lt;0" label="Check_Values_&lt;0">
+          <taggedValue xmi:id="_EeQmUe0_EeysC_GgI3oOMA" tag="Status" value="development"/>
+          <taggedValue xmi:id="_EeQmUu0_EeysC_GgI3oOMA" tag="Author" value="fentri@ntt.com"/>
+          <taggedValue xmi:id="_EeQmU-0_EeysC_GgI3oOMA" tag="Purpose" value=""/>
+          <taggedValue xmi:id="_EeQmVO0_EeysC_GgI3oOMA" tag="Description" value=""/>
+          <taggedValue xmi:id="_EeQmVe0_EeysC_GgI3oOMA" tag="Version" value="0.1"/>
+          <taggedValue xmi:id="_EeQmVu0_EeysC_GgI3oOMA" tag="Validation_Status" value="true"/>
+          <sqlGenericExpression xmi:id="_EeQmV-0_EeysC_GgI3oOMA" body="SELECT COUNT(CASE WHEN TRX_BASE_AMT &lt; 500 THEN 1 END), COUNT(*) FROM  &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-16 13:38:42" expressionVariableMap="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F40000000000003770800000004000000027400123C57484552455F544558545F4649454C443E7400007400203C4D41544348494E475F45585052455353494F4E5F544558545F4649454C443E7400125452585F424153455F414D54203C2035303078"/>
+          <viewInvalidRowsExpression xmi:id="_EeQmWO0_EeysC_GgI3oOMA" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE NOT (TRX_BASE_AMT &lt; 500  ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-16 13:38:42"/>
+          <viewValidRowsExpression xmi:id="_EeQmWe0_EeysC_GgI3oOMA" body="SELECT * FROM  &lt;%=__TABLE_NAME__%> WHERE TRX_BASE_AMT &lt; 500   &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-16 13:38:42"/>
+          <viewInvalidValuesExpression xmi:id="_EeQmWu0_EeysC_GgI3oOMA" body="SELECT  &lt;%=__COLUMN_NAMES__%> FROM  &lt;%=__TABLE_NAME__%> WHERE NOT (TRX_BASE_AMT &lt; 500  ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-16 13:38:42"/>
+          <viewValidValuesExpression xmi:id="_EeQmW-0_EeysC_GgI3oOMA" body="SELECT &lt;%=__COLUMN_NAMES__%>  FROM  &lt;%=__TABLE_NAME__%> WHERE TRX_BASE_AMT &lt; 500   &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server" version="" modificationDate="2022-06-16 13:38:42"/>
         </builtInIndicatorDefinition>
       </indicators>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_vXIeB-vFEeysC_GgI3oOMA" count="100000" computed="true">

@@ -16,5 +16,6 @@
   </dataquality.indicators.definition.userdefine:UDIndicatorDefinition>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_iyObcOrLEeysLJGdMxs_fw" kind="Usage" supplier="_OUFjUOrLEeysLJGdMxs_fw">
     <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TRANSACTIONAL_0.1.ana#_NGK2sOiyEeysLJGdMxs_fw"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/DTL_TRANSACTION_0.1.ana#_XEYYkOutEeysC_GgI3oOMA"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
