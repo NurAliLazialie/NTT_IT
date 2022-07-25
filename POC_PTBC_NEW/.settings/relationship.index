@@ -1,5 +1,27 @@
 [ {
   "baseItem" : {
+    "id" : "_-Ew4MDYkEeyt_MC5s04lzA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_-dzPMEd7Eeyqo44XL0vwpA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_7c2KAOrqEeysLJGdMxs_fw",
     "version" : "0.1",
     "type" : "job"
@@ -8,6 +30,105 @@
     "id" : "_TUFR0OivEeysLJGdMxs_fw",
     "version" : "Latest",
     "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_7p_1ADr9EeyRlsp2Ye5gNg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_8GnnQDJEEey784n_C02OUg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "BANKCENTRALASIA:_EK7eYDG1Eeyi2OhbwclTtw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_mJRL0DCnEeyi2OhbwclTtw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_q3YSEC_pEeyPsP1thpkwow",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_8KOK0CwjEeyKpIHhVWvLng",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "BANKCENTRALASIA:_CkZnsCweEeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_Lk2L8CwHEeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:__jil4Cy5EeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_fQ9OUCzEEeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_p6hGoCzHEeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_szop4Cv4EeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_8O5agDI5Eey784n_C02OUg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "BANKCENTRALASIA:_Bnn2QCs1Eey5tMsIyX4Wlg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_XdLycDraEeyRlsp2Ye5gNg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_mJRL0DCnEeyi2OhbwclTtw",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_8yWXgDe4Eeyn6oAOusKIyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
   } ]
 }, {
   "baseItem" : {
@@ -34,6 +155,105 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_Bnn2QCs1Eey5tMsIyX4Wlg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oaAfsDG1Eeyi2OhbwclTtw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_oUx-sD1sEey3vN0xBkTJDA - LOAN_DTL",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_CkZnsCweEeyKpIHhVWvLng",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_kDR7UC1oEeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_EK7eYDG1Eeyi2OhbwclTtw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oaAfsDG1Eeyi2OhbwclTtw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - customerwithreligion",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - customerwithsex",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - religion",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - sex",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_FJkm4Ea8Eeyqo44XL0vwpA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - religion",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_L6nV8DefEeyn6oAOusKIyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "BANKCENTRALASIA:_8yWXgDe4Eeyn6oAOusKIyA",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_Mb-gQOrNEeysLJGdMxs_fw",
     "version" : "0.1",
     "type" : "job"
@@ -46,6 +266,32 @@
     "id" : "CleansingTstandardizerow_1",
     "version" : "Latest",
     "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_OUTrYDMkEey784n_C02OUg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_mlzXsDcGEeyn6oAOusKIyA",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_QWJ20DYjEeyt_MC5s04lzA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "BANKCENTRALASIA:_-Ew4MDYkEeyt_MC5s04lzA",
+    "version" : "Latest",
+    "type" : "job"
   } ]
 }, {
   "baseItem" : {
@@ -175,6 +421,84 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_X_Nh8EXREeyqo44XL0vwpA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_XdLycDraEeyRlsp2Ye5gNg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - loan_dtl",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_YH_QcEBgEeyVApDTtVqeKw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_UfRfgEBvEeyVApDTtVqeKw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_Yc_dwC2hEeyPsP1thpkwow",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_kDR7UC1oEeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_YpFcQCzhEeyKpIHhVWvLng",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_kDR7UC1oEeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "__e1gMDV5Eeyt_MC5s04lzA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "BANKCENTRALASIA:_QWJ20DYjEeyt_MC5s04lzA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_WwXmUDu3EeyQfJewpMhw7g",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_a0cr8OivEeysLJGdMxs_fw",
     "version" : "0.1",
     "type" : "job"
@@ -186,6 +510,28 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_aXwF0C2XEeyKpIHhVWvLng",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_kDR7UC1oEeyKpIHhVWvLng",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_kAhGEEH_EeycZN0jIBtq7g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_nRI9UOr4EeysLJGdMxs_fw",
     "version" : "0.1",
     "type" : "job"
@@ -194,6 +540,90 @@
     "id" : "_TUFR0OivEeysLJGdMxs_fw",
     "version" : "Latest",
     "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_neDOkDGFEeyi2OhbwclTtw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - customerwithreligion",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - customerwithsex",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - religion",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - sex",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_pRC6cEkkEeyXbur9waQpiw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "BANKCENTRALASIA:_YH_QcEBgEeyVApDTtVqeKw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_mJRL0DCnEeyi2OhbwclTtw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_q3YSEC_pEeyPsP1thpkwow",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_pasWAEYAEeyqo44XL0vwpA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_q3YSEC_pEeyPsP1thpkwow",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_4Qp48C_sEeyPsP1thpkwow - ethnic",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oUx-sD1sEey3vN0xBkTJDA - RELIGION",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
@@ -229,5 +659,32 @@
     "id" : "_lr99MOixEeysLJGdMxs_fw - DTL_TRANSACTION",
     "version" : "Latest",
     "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_tZod8DbwEeyn6oAOusKIyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "BANKCENTRALASIA:_QWJ20DYjEeyt_MC5s04lzA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:__iP4sCqFEeykUOk158pmaA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_mJRL0DCnEeyi2OhbwclTtw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_pyyc4DF7Eeyi2OhbwclTtw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "BANKCENTRALASIA:_q3YSEC_pEeyPsP1thpkwow",
+    "version" : "Latest",
+    "type" : "job"
   } ]
 } ]

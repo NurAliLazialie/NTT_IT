@@ -1,0 +1,32 @@
+{
+  "itemId" : "_EK7eYDG1Eeyi2OhbwclTtw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_oaAfsDG1Eeyi2OhbwclTtw",
+    "parameterList" : [ {
+      "id" : "_G3hDpjG5Eeyi2OhbwclTtw",
+      "name" : "BussDate"
+    }, {
+      "id" : "_G3hDoDG5Eeyi2OhbwclTtw",
+      "name" : "Database"
+    }, {
+      "id" : "_G3hDpDG5Eeyi2OhbwclTtw",
+      "name" : "Gender"
+    }, {
+      "id" : "_N0eEIDG4Eeyi2OhbwclTtw",
+      "name" : "Host"
+    }, {
+      "id" : "_G3hDozG5Eeyi2OhbwclTtw",
+      "name" : "Password"
+    }, {
+      "id" : "_G3hDoTG5Eeyi2OhbwclTtw",
+      "name" : "Port"
+    }, {
+      "id" : "_G3hDpTG5Eeyi2OhbwclTtw",
+      "name" : "Religion"
+    }, {
+      "id" : "_G3hDojG5Eeyi2OhbwclTtw",
+      "name" : "Username"
+    } ]
+  } ]
+}

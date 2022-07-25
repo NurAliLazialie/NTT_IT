@@ -1,0 +1,20 @@
+{
+  "itemId" : "_OUTrYDMkEey784n_C02OUg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_mlzXsDcGEeyn6oAOusKIyA",
+    "parameterList" : [ {
+      "id" : "_mmFrkTcGEeyn6oAOusKIyA",
+      "name" : "Host"
+    }, {
+      "id" : "_0Z29cjcGEeyn6oAOusKIyA",
+      "name" : "Password"
+    }, {
+      "id" : "_0Z29cDcGEeyn6oAOusKIyA",
+      "name" : "Port"
+    }, {
+      "id" : "_0Z29cTcGEeyn6oAOusKIyA",
+      "name" : "User"
+    } ]
+  } ]
+}
